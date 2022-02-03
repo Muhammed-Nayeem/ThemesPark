@@ -397,8 +397,8 @@ img {
   padding: 30px 20px;
   background-color: #fff;
   border-radius: 3px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .services-area .services-wrapper .single-services:hover {
@@ -427,16 +427,16 @@ img {
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .services-area .services-wrapper .single-services h3 {
   font-size: 24px;
   color: #333;
   margin: 20px 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .services-area .services-wrapper .single-services p {
