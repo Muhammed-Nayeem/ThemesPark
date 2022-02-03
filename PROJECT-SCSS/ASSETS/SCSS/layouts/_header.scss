@@ -1,0 +1,37 @@
+.header-area {
+  background-color: $white;
+  padding: 18px 0;
+  .header-wrapper {
+    .logo {
+      float: left;
+      width: 200px;
+      a {
+        display: block;
+        h3 {
+          text-transform: uppercase;
+          color: $black;
+          font-size: 22px;
+        }
+      }
+    }
+    .menu-items {
+      float: right;
+      width: 970px;
+      margin-left: 30px;
+      ul {
+        text-align: right;
+        li {
+          display: inline-block;
+          a {
+            display: block;
+            margin-left: 20px;
+            font-weight: 500;
+            &:hover {
+              color: $primary_color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

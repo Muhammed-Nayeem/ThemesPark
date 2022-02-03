@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+  transition: 0.3s;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.fix::after,
+.fix::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* background css */
+.bg {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $black;
+    opacity: 0.75;
+    z-index: -1;
+  }
+}
+
+/* button css */
+.btn {
+  display: inline-block;
+  text-transform: capitalize;
+  border-radius: 3px;
+  cursor: pointer;
+  &.btn-primary {
+    background-color: $primary_color;
+    padding: 12px 40px;
+    &:hover {
+      background-color: $black;
+    }
+  }
+  &.btn-border {
+    border: 2px solid $primary_color;
+    padding: 10px 40px;
+    &:hover {
+      border: 2px solid $black;
+      color: $primary_color;
+    }
+  }
+}
+
+/* section title */
+.section-title {
+  h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+    display: inline-block;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 3px;
+      background-color: $primary_color;
+      border-radius: 2px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  p {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+/* margin and padding css */
+@for $i from 1 through 10 {
+  .pt-#{$i * 10} {
+    padding-top: ($i * 10) + px;
+  }
+  .mt-#{$i * 10} {
+    margin-top: ($i * 10) + px;
+  }
+  .pb-#{$i * 10} {
+    padding-bottom: ($i * 10) + px;
+  }
+  .mb-#{$i * 10} {
+    margin-bottom: ($i * 10) + px;
+  }
+}
+
+/* text align css */
+$text: center, left, right, justify;
+@each $i in $text {
+  .text-#{$i} {
+    text-align: $i;
+  }
+}

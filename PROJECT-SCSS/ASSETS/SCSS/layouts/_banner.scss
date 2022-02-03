@@ -1,0 +1,18 @@
+.banner-area {
+  .banner-content {
+    h1 {
+      color: $white;
+      text-transform: capitalize;
+      font-size: 45px;
+    }
+    p {
+      color: $white;
+      max-width: 500px;
+      margin: 30px auto;
+    }
+    a {
+      margin: 0 10px;
+      color: $white;
+    }
+  }
+}
