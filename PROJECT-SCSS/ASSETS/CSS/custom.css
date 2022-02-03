@@ -442,4 +442,32 @@ img {
 .services-area .services-wrapper .single-services p {
   color: #333;
 }
+
+.portfolio-area .portfolio-wrapper .single-portfolio {
+  float: left;
+  width: 370px;
+  height: 250px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.portfolio-area .portfolio-wrapper .single-portfolio:nth-child(3), .portfolio-area .portfolio-wrapper .single-portfolio:nth-child(6) {
+  margin-right: 0px;
+}
+
+.portfolio-area .portfolio-wrapper .single-portfolio h4 {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 22px;
+  padding: 12px 0;
+}
 /*# sourceMappingURL=custom.css.map */
