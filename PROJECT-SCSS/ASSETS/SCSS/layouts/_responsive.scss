@@ -1,0 +1,79 @@
+/* medium layout: 1280px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+  .header-area {
+    .header-wrapper {
+      .menu-items {
+        width: 740px;
+      }
+    }
+  }
+  .about-area {
+    .about-wrapper {
+      .single-about {
+        width: 313px;
+        padding: 30px 10px;
+        margin-right: 15px;
+      }
+    }
+  }
+  .services-area {
+    .services-wrapper {
+      .single-services {
+        width: 313px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        padding: 20px 10px;
+      }
+    }
+  }
+  .portfolio-area {
+    .portfolio-wrapper {
+      .single-portfolio {
+        width: 313px;
+        height: 230px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .blog-area {
+    .blog-wrapper {
+      .single-blog {
+        width: 313px;
+        margin-right: 15px;
+      }
+    }
+  }
+  .contact-area {
+    .contact-top {
+      .single-address {
+        width: 313px;
+        margin-right: 15px;
+      }
+    }
+    .contact-bottom {
+      .contact-form {
+        width: 530px;
+      }
+      .contact-map {
+        width: 415px;
+        margin-left: 25px;
+      }
+    }
+  }
+}
+
+/* tablet layout: 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* mobile layout: 320px */
+@media only screen and (max-width: 767px) {
+}
+
+/* wide mobile layout: 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}

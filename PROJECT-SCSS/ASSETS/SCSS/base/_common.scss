@@ -58,14 +58,14 @@ img {
   cursor: pointer;
   &.btn-primary {
     background-color: $primary_color;
-    padding: 12px 40px;
+    padding: 12px 20px;
     &:hover {
       background-color: $black;
     }
   }
   &.btn-border {
     border: 2px solid $primary_color;
-    padding: 10px 40px;
+    padding: 10px 18px;
     &:hover {
       border: 2px solid $black;
       color: $primary_color;
