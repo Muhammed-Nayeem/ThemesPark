@@ -492,6 +492,7 @@ img {
   width: 380px;
   margin-right: 30px;
   border: 1px solid #ddd;
+  background-color: #f2f2f2;
   overflow: hidden;
 }
 
@@ -528,5 +529,80 @@ img {
 
 .blog-area .blog-wrapper .single-blog .blog-text a {
   color: #fff;
+}
+
+.contact-area {
+  background-color: #f2f2f2;
+}
+
+.contact-area .contact-top .single-address {
+  float: left;
+  width: 380px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.contact-area .contact-top .single-address:last-child {
+  margin-right: 0px;
+}
+
+.contact-area .contact-top .single-address i {
+  font-size: 30px;
+  color: #333;
+}
+
+.contact-area .contact-top .single-address h3 {
+  font-size: 24px;
+  text-transform: capitalize;
+  margin: 10px 0;
+  color: #333;
+}
+
+.contact-area .contact-top .single-address span {
+  color: #333;
+  font-size: 15px;
+}
+
+.contact-area .contact-bottom .contact-form {
+  float: left;
+  width: 700px;
+}
+
+.contact-area .contact-bottom .contact-form h3 {
+  text-transform: capitalize;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.contact-area .contact-bottom .contact-form form input[type="text"],
+.contact-area .contact-bottom .contact-form form input[type="email"], .contact-area .contact-bottom .contact-form form textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 12px 10px;
+  margin-bottom: 12px;
+}
+
+.contact-area .contact-bottom .contact-form form input[type="submit"] {
+  color: #fff;
+  outline: none;
+  border: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.contact-area .contact-bottom .contact-map {
+  float: right;
+  width: 450px;
+  margin-left: 50px;
+}
+
+.contact-area .contact-bottom .contact-map iframe {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 3px;
+  height: 270px;
 }
 /*# sourceMappingURL=custom.css.map */

@@ -5,6 +5,7 @@
       width: 380px;
       margin-right: 30px;
       border: 1px solid $border_gray;
+      background-color: $bg_gray;
       overflow: hidden;
       &:hover {
         .blog-image {
