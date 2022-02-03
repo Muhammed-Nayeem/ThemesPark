@@ -605,4 +605,13 @@ img {
   padding: 3px;
   height: 270px;
 }
+
+.footer-area {
+  background-color: #333;
+}
+
+.footer-area .footer-content p {
+  color: #fff;
+  text-transform: capitalize;
+}
 /*# sourceMappingURL=custom.css.map */

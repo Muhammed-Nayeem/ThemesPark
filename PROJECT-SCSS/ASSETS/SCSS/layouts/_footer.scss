@@ -1,0 +1,9 @@
+.footer-area {
+  background-color: $black;
+  .footer-content {
+    p {
+      color: $white;
+      text-transform: capitalize;
+    }
+  }
+}
