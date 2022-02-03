@@ -16,7 +16,8 @@
         "../SCSS/layouts/_cta.scss",
         "../SCSS/layouts/_blog.scss",
         "../SCSS/layouts/_contact.scss",
-        "../SCSS/layouts/_footer.scss"
+        "../SCSS/layouts/_footer.scss",
+        "../SCSS/layouts/_responsive.scss"
     ],
     "names": [],
     "file": "custom.css"
