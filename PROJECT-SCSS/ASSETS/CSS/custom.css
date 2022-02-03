@@ -719,5 +719,49 @@ img {
 }
 
 /* mobile layout: 320px */
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 320px;
+  }
+  .header-area .header-wrapper .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .header-area .header-wrapper .menu-items {
+    width: 100%;
+  }
+  .header-area .header-wrapper .menu-items ul {
+    text-align: center;
+  }
+  .banner-area .banner-content h1, .banner-area .cta-content h1, .cta-area .banner-content h1, .cta-area .cta-content h1 {
+    line-height: 50px;
+  }
+  .banner-area .banner-content p, .banner-area .cta-content p, .cta-area .banner-content p, .cta-area .cta-content p {
+    margin: 25px auto;
+  }
+  .about-area .about-wrapper .single-about, .about-area .about-wrapper .single-services, .about-area .about-wrapper .single-portfolio, .about-area .about-wrapper .single-blog, .about-area .services-wrapper .single-about, .about-area .services-wrapper .single-services, .about-area .services-wrapper .single-portfolio, .about-area .services-wrapper .single-blog, .about-area .portfolio-wrapper .single-about, .about-area .portfolio-wrapper .single-services, .about-area .portfolio-wrapper .single-portfolio, .about-area .portfolio-wrapper .single-blog, .about-area .blog-wrapper .single-about, .about-area .blog-wrapper .single-services, .about-area .blog-wrapper .single-portfolio, .about-area .blog-wrapper .single-blog, .services-area .about-wrapper .single-about, .services-area .about-wrapper .single-services, .services-area .about-wrapper .single-portfolio, .services-area .about-wrapper .single-blog, .services-area .services-wrapper .single-about, .services-area .services-wrapper .single-services, .services-area .services-wrapper .single-portfolio, .services-area .services-wrapper .single-blog, .services-area .portfolio-wrapper .single-about, .services-area .portfolio-wrapper .single-services, .services-area .portfolio-wrapper .single-portfolio, .services-area .portfolio-wrapper .single-blog, .services-area .blog-wrapper .single-about, .services-area .blog-wrapper .single-services, .services-area .blog-wrapper .single-portfolio, .services-area .blog-wrapper .single-blog, .portfolio-area .about-wrapper .single-about, .portfolio-area .about-wrapper .single-services, .portfolio-area .about-wrapper .single-portfolio, .portfolio-area .about-wrapper .single-blog, .portfolio-area .services-wrapper .single-about, .portfolio-area .services-wrapper .single-services, .portfolio-area .services-wrapper .single-portfolio, .portfolio-area .services-wrapper .single-blog, .portfolio-area .portfolio-wrapper .single-about, .portfolio-area .portfolio-wrapper .single-services, .portfolio-area .portfolio-wrapper .single-portfolio, .portfolio-area .portfolio-wrapper .single-blog, .portfolio-area .blog-wrapper .single-about, .portfolio-area .blog-wrapper .single-services, .portfolio-area .blog-wrapper .single-portfolio, .portfolio-area .blog-wrapper .single-blog, .blog-area .about-wrapper .single-about, .blog-area .about-wrapper .single-services, .blog-area .about-wrapper .single-portfolio, .blog-area .about-wrapper .single-blog, .blog-area .services-wrapper .single-about, .blog-area .services-wrapper .single-services, .blog-area .services-wrapper .single-portfolio, .blog-area .services-wrapper .single-blog, .blog-area .portfolio-wrapper .single-about, .blog-area .portfolio-wrapper .single-services, .blog-area .portfolio-wrapper .single-portfolio, .blog-area .portfolio-wrapper .single-blog, .blog-area .blog-wrapper .single-about, .blog-area .blog-wrapper .single-services, .blog-area .blog-wrapper .single-portfolio, .blog-area .blog-wrapper .single-blog {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .about-area .about-wrapper .single-about:last-child, .about-area .about-wrapper .single-services:last-child, .about-area .about-wrapper .single-portfolio:last-child, .about-area .about-wrapper .single-blog:last-child, .about-area .services-wrapper .single-about:last-child, .about-area .services-wrapper .single-services:last-child, .about-area .services-wrapper .single-portfolio:last-child, .about-area .services-wrapper .single-blog:last-child, .about-area .portfolio-wrapper .single-about:last-child, .about-area .portfolio-wrapper .single-services:last-child, .about-area .portfolio-wrapper .single-portfolio:last-child, .about-area .portfolio-wrapper .single-blog:last-child, .about-area .blog-wrapper .single-about:last-child, .about-area .blog-wrapper .single-services:last-child, .about-area .blog-wrapper .single-portfolio:last-child, .about-area .blog-wrapper .single-blog:last-child, .services-area .about-wrapper .single-about:last-child, .services-area .about-wrapper .single-services:last-child, .services-area .about-wrapper .single-portfolio:last-child, .services-area .about-wrapper .single-blog:last-child, .services-area .services-wrapper .single-about:last-child, .services-area .services-wrapper .single-services:last-child, .services-area .services-wrapper .single-portfolio:last-child, .services-area .services-wrapper .single-blog:last-child, .services-area .portfolio-wrapper .single-about:last-child, .services-area .portfolio-wrapper .single-services:last-child, .services-area .portfolio-wrapper .single-portfolio:last-child, .services-area .portfolio-wrapper .single-blog:last-child, .services-area .blog-wrapper .single-about:last-child, .services-area .blog-wrapper .single-services:last-child, .services-area .blog-wrapper .single-portfolio:last-child, .services-area .blog-wrapper .single-blog:last-child, .portfolio-area .about-wrapper .single-about:last-child, .portfolio-area .about-wrapper .single-services:last-child, .portfolio-area .about-wrapper .single-portfolio:last-child, .portfolio-area .about-wrapper .single-blog:last-child, .portfolio-area .services-wrapper .single-about:last-child, .portfolio-area .services-wrapper .single-services:last-child, .portfolio-area .services-wrapper .single-portfolio:last-child, .portfolio-area .services-wrapper .single-blog:last-child, .portfolio-area .portfolio-wrapper .single-about:last-child, .portfolio-area .portfolio-wrapper .single-services:last-child, .portfolio-area .portfolio-wrapper .single-portfolio:last-child, .portfolio-area .portfolio-wrapper .single-blog:last-child, .portfolio-area .blog-wrapper .single-about:last-child, .portfolio-area .blog-wrapper .single-services:last-child, .portfolio-area .blog-wrapper .single-portfolio:last-child, .portfolio-area .blog-wrapper .single-blog:last-child, .blog-area .about-wrapper .single-about:last-child, .blog-area .about-wrapper .single-services:last-child, .blog-area .about-wrapper .single-portfolio:last-child, .blog-area .about-wrapper .single-blog:last-child, .blog-area .services-wrapper .single-about:last-child, .blog-area .services-wrapper .single-services:last-child, .blog-area .services-wrapper .single-portfolio:last-child, .blog-area .services-wrapper .single-blog:last-child, .blog-area .portfolio-wrapper .single-about:last-child, .blog-area .portfolio-wrapper .single-services:last-child, .blog-area .portfolio-wrapper .single-portfolio:last-child, .blog-area .portfolio-wrapper .single-blog:last-child, .blog-area .blog-wrapper .single-about:last-child, .blog-area .blog-wrapper .single-services:last-child, .blog-area .blog-wrapper .single-portfolio:last-child, .blog-area .blog-wrapper .single-blog:last-child {
+    margin-bottom: 0px;
+  }
+  .contact-area .contact-top .single-address {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contact-area .contact-top .single-address:last-child {
+    margin-bottom: 0px;
+  }
+  .contact-area .contact-bottom .contact-form {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .contact-area .contact-bottom .contact-map {
+    width: 100%;
+  }
+}
+
 /* wide mobile layout: 480px */
 /*# sourceMappingURL=custom.css.map */
