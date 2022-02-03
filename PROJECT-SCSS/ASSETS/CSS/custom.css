@@ -486,4 +486,47 @@ img {
 .cta-area .cta-content a {
   color: #fff;
 }
+
+.blog-area .blog-wrapper .single-blog {
+  float: left;
+  width: 380px;
+  margin-right: 30px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.blog-area .blog-wrapper .single-blog:hover .blog-image {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.blog-area .blog-wrapper .single-blog:last-child {
+  margin-right: 0px;
+}
+
+.blog-area .blog-wrapper .single-blog .blog-image {
+  width: 100%;
+  background-image: cover;
+  background-position: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.blog-area .blog-wrapper .single-blog .blog-text {
+  width: 100%;
+  padding: 25px 20px;
+}
+
+.blog-area .blog-wrapper .single-blog .blog-text h4 {
+  font-size: 22px;
+  color: #333;
+}
+
+.blog-area .blog-wrapper .single-blog .blog-text p {
+  margin: 20px 0;
+}
+
+.blog-area .blog-wrapper .single-blog .blog-text a {
+  color: #fff;
+}
 /*# sourceMappingURL=custom.css.map */
