@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+}
+
+/* using BEM methodology */
+.service {
+  width: 1000px;
+  margin: 200px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  /* common button */
+}
+
+.service__single {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  background-color: tomato;
+  padding: 20px;
+}
+
+.service__title {
+  font-size: 25px;
+  color: whitesmoke;
+}
+
+.service__desc {
+  margin: 20px 0;
+  line-height: 20px;
+  color: whitesmoke;
+}
+
+.service__btn {
+  background-color: teal;
+  color: whitesmoke;
+}
+
+.service__btn:hover {
+  background-color: yellowgreen;
+}
+
+/* multiple buttons */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 18px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn--red {
+  background-color: red;
+}
+
+.btn--red:hover {
+  background-color: hotpink;
+}
+
+.btn--green {
+  background-color: green;
+}
+
+.btn--green:hover {
+  background-color: crimson;
+}
+
+.btn--blue {
+  background-color: blue;
+}
+
+.btn--blue:hover {
+  background-color: goldenrod;
+}
+/*# sourceMappingURL=custom.css.map */
