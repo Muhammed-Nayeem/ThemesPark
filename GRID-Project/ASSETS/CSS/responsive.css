@@ -1,0 +1,79 @@
+/* Medium Device: 1280px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Tablet Device: 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
+  .gallery__area {
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+  }
+  .contact__single-address {
+    -ms-grid-columns: 1fr 5fr;
+        grid-template-columns: 1fr 5fr;
+  }
+}
+
+/* Mobile Device: 320px */
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 300px;
+  }
+  .header__area {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    text-align: center;
+  }
+  .header__nav-list {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 10px;
+  }
+  .about__section-heading {
+    font-size: 28px;
+  }
+  .about__area {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-row-gap: 30px;
+  }
+  .service__area {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-row-gap: 30px;
+  }
+  .gallery__area {
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+  }
+  .contact__area {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-row-gap: 30px;
+  }
+  .contact__single-address {
+    -ms-grid-columns: 1fr 5fr;
+        grid-template-columns: 1fr 5fr;
+  }
+}
+
+/* Wide Mobile Device: 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 450px;
+  }
+  .header__nav-list {
+    -ms-grid-columns: (auto)[5];
+        grid-template-columns: repeat(5, auto);
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
