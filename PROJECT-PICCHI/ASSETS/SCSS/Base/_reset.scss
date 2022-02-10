@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* container property */
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/* margin and padding */
+@for $i from 1 through 12 {
+  .pt-#{$i * 10} {
+    padding-top: ($i * 10) + px;
+  }
+  .mt-#{$i * 10} {
+    margin-top: ($i * 10) + px;
+  }
+  .pb-#{$i * 10} {
+    padding-bottom: ($i * 10) + px;
+  }
+  .mb-#{$i * 10} {
+    margin-bottom: ($i * 10) + px;
+  }
+}
+
+/* text align property */
+$text_align: right, left, center, justify;
+@each $i in $text_align {
+  .text-#{$i} {
+    text-align: $i;
+  }
+}
+
+/* button property */
+.btn {
+  display: inline-block;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 16px;
+  border-radius: 3px;
+  &.btn-primary {
+    background-color: tomato;
+    padding: 10px 22px;
+  }
+  &.btn-border {
+    border: 2px solid tomato;
+    padding: 8px 22px;
+  }
+}
