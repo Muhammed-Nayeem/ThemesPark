@@ -47,16 +47,57 @@ $text_align: right, left, center, justify;
 /* button property */
 .btn {
   display: inline-block;
-  color: #fff;
+  color: $button-color;
   text-transform: capitalize;
   font-size: 16px;
   border-radius: 3px;
+  transition: 0.3s;
   &.btn-primary {
-    background-color: tomato;
-    padding: 10px 22px;
+    background-color: $button-primary;
+    padding: 12px 25px;
+    &:hover {
+      background-color: $button-hover-primary;
+    }
   }
   &.btn-border {
-    border: 2px solid tomato;
-    padding: 8px 22px;
+    border: 2px solid $button-border;
+    padding: 10px 25px;
+    &:hover {
+      border: 2px solid $button-hover-border;
+    }
+  }
+}
+
+/* section title */
+.section-title {
+  h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: $primary-font;
+  }
+  h1 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 35px;
+    color: $primary-font;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 16px;
+    padding-bottom: 25px;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 2px;
+      background-color: $primary-color;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: $primary-font;
   }
 }

@@ -1,0 +1,54 @@
+.feature-area {
+  background-color: $third-primary;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../ASSETS/IMAGES/features/feature-1.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $bg-overlay;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0.75;
+  }
+  .feature {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-column-gap: 5%;
+    .feature-content {
+      .feature-box {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 25px;
+        .single-feature {
+          i {
+            font-size: 28px;
+            color: $second-primary;
+          }
+          h4 {
+            font-size: 22px;
+            color: $primary-font;
+            text-transform: capitalize;
+            margin: 12px 0;
+          }
+          p {
+            color: $primary-font;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.partner-area {
+  background-color: $third-primary;
+  .partner {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-column-gap: 30px;
+    img {
+      max-width: 160px;
+    }
+  }
+}

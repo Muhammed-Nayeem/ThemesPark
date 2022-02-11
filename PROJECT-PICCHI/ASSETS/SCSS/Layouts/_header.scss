@@ -1,0 +1,40 @@
+.header-area {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  .header {
+    display: grid;
+    grid-template-columns: 200px 900px;
+    grid-column-gap: 70px;
+    align-items: center;
+    .logo {
+      a {
+        text-transform: uppercase;
+        font-size: 24px;
+        color: $second-primary-font;
+        font-weight: 700;
+        display: block;
+      }
+    }
+    .menu {
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        li {
+          a {
+            text-transform: capitalize;
+            font-size: 16px;
+            color: $second-primary-font;
+            margin-left: 20px;
+            display: block;
+            transition: 0.3s;
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

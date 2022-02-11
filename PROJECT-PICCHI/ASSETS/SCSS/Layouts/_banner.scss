@@ -1,0 +1,24 @@
+.banner-area {
+  @include bg;
+  height: 100vh;
+  .banner-content {
+    color: $second-primary-font;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h4 {
+      font-size: 20px;
+      font-weight: 400;
+    }
+    h1 {
+      text-transform: uppercase;
+      font-size: 60px;
+      margin: 35px 0;
+    }
+    a {
+      margin: 20px 10px 0;
+    }
+  }
+}

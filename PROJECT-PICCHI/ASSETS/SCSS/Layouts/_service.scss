@@ -1,0 +1,42 @@
+.service-area {
+  .services {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 30px;
+    .single-service {
+      background-color: $third-primary;
+      padding: 35px 25px;
+      text-align: center;
+      border-radius: 3px;
+      box-shadow: 0 15px 40px $third-primary;
+      border-bottom: 3px solid transparent;
+      transition: 0.3s;
+      &:hover {
+        border-color: $primary-color;
+        i {
+          background-color: $primary-color;
+          color: $third-primary;
+        }
+      }
+      i {
+        width: 50px;
+        height: 50px;
+        border: 1px solid $button-border;
+        border-radius: 50%;
+        line-height: 50px;
+        font-size: 20px;
+        color: $primary-color;
+        transition: 0.3s;
+      }
+      h4 {
+        text-transform: capitalize;
+        font-size: 24px;
+        color: $primary-font;
+        margin: 15px 0;
+      }
+      p {
+        color: $primary-font;
+      }
+    }
+  }
+}

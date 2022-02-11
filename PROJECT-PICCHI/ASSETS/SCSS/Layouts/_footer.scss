@@ -1,0 +1,30 @@
+.footer-area {
+  background-color: $bg-overlay;
+  .footer-content {
+    text-align: center;
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      li {
+        a {
+          color: $second-primary-font;
+          display: inline-block;
+          margin: 0 10px;
+          transition: 0.3s;
+          &:hover {
+            color: $primary-color;
+          }
+          i {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    p {
+      font-size: 16px;
+      color: $second-primary-font;
+      margin-top: 15px;
+    }
+  }
+}

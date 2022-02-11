@@ -1,0 +1,42 @@
+.process-area {
+  @include bg;
+  .section-title {
+    h4 {
+      color: $third-primary;
+    }
+    h1 {
+      color: $third-primary;
+    }
+    p {
+      color: $third-primary;
+    }
+  }
+  .process {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+  }
+  .single-process {
+    h1 {
+      position: relative;
+      color: #f2f4ff;
+      background-color: #4864e6;
+      padding: 15px;
+      font-size: 24px;
+      text-transform: capitalize;
+      border-radius: 5px;
+      span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 15px 20px;
+        background-color: $button-hover-primary;
+      }
+    }
+    p {
+      text-align: center;
+      color: $second-primary-font;
+      margin-top: 20px;
+    }
+  }
+}
