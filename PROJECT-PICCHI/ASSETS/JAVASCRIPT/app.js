@@ -11,8 +11,7 @@
  * StickyNav: Using JavaScript;
  */
 const navBar = document.querySelector(".header-area");
-document.addEventListener("scroll", scrollEffect);
-function scrollEffect() {
+window.onscroll = () => {
   let scrollNav = window.scrollY;
   if (scrollNav >= 25) {
     navBar.classList.add("sticky");
@@ -53,5 +52,25 @@ $(document).ready(function () {
     nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-arrow-right-long"></i></button>',
     dots: true,
     autoplay: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+        }
+      }
+    ]
   });
 });
