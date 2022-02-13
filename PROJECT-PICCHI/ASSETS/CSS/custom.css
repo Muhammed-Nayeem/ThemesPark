@@ -357,7 +357,15 @@ img {
   position: fixed;
   left: 0;
   right: 0;
+  padding: 25px 0;
   z-index: 999;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header-area.sticky {
+  background-color: #333;
+  padding: 20px;
 }
 
 .header-area .header {
@@ -386,6 +394,10 @@ img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.header-area .header .menu ul li.current a {
+  color: #4864E6;
 }
 
 .header-area .header .menu ul li a {
@@ -1058,16 +1070,72 @@ img {
 }
 
 .testimonial-area .testimonial {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (auto)[3];
-      grid-template-columns: repeat(3, auto);
-  grid-column-gap: 40px;
+  /* slick slider arrow next previous */
+  /* slick dots */
+}
+
+.testimonial-area .testimonial .slick-arrow {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: 0;
+  background-color: #4864E6;
+  color: #f2f4ff;
+  font-size: 18px;
+  border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.testimonial-area .testimonial .slick-arrow:hover {
+  background-color: #607dfa;
+}
+
+.testimonial-area .testimonial .slick-arrow.slick-prev {
+  left: -60px;
+}
+
+.testimonial-area .testimonial .slick-arrow.slick-next {
+  right: -60px;
+}
+
+.testimonial-area .testimonial .slick-dots {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  margin-top: 15px;
+}
+
+.testimonial-area .testimonial .slick-dots li {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.testimonial-area .testimonial .slick-dots li.slick-active button {
+  background: #4864E6;
+  color: #f2f4ff;
+}
+
+.testimonial-area .testimonial .slick-dots li button {
+  border: 0;
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  line-height: 15px;
+  border-radius: 50%;
+  background-color: #f2f4ff;
+  color: #333;
 }
 
 .testimonial-area .testimonial .single-testimonial {
   border: 2px solid #f2f4ff;
-  padding: 40px 25px;
+  padding: 30px 20px;
   text-align: center;
 }
 
@@ -1117,6 +1185,10 @@ img {
   display: block;
   font-size: 13px;
   color: #f2f4ff;
+}
+
+.testimonial-area .testimonial .slick-slide {
+  margin: 0 15px;
 }
 
 .blog-area .blogs {

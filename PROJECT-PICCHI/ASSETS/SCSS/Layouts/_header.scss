@@ -2,7 +2,13 @@
   position: fixed;
   left: 0;
   right: 0;
+  padding: 25px 0;
   z-index: 999;
+  transition: .3s;
+  &.sticky {
+    background-color: $bg-overlay;
+    padding: 20px;
+  }
   .header {
     display: grid;
     grid-template-columns: 200px 900px;
@@ -22,6 +28,11 @@
         display: flex;
         justify-content: flex-end;
         li {
+          &.current {
+            a {
+              color: $primary-color;
+            }
+          }
           a {
             text-transform: capitalize;
             font-size: 16px;

@@ -8,27 +8,31 @@
     <title>PROJECT || PICCHI</title>
     <!-- font awesome css-->
     <link rel="stylesheet" href="./ASSETS/VENDORS/FontAwesome/css/all.min.css">
+    <!-- magnific popup css -->
+    <link rel="stylesheet" href="./ASSETS//VENDORS/Magnific-Popup/magnific-popup.css">
+    <!-- slick slider css -->
+    <link rel="stylesheet" href="./ASSETS/VENDORS/Slick-Slider/slick.css">
     <!-- custom css -->
     <link rel="stylesheet" href="./ASSETS/CSS/custom.css">
   </head>
   <body>
     <!-- heder area start -->
-    <header class="header-area pt-20 pb-20">
+    <header class="header-area">
       <div class="container">
         <div class="header">
           <div class="logo">
             <a href="#">picchi</a>
           </div>
           <nav class="menu">
-            <ul>
-              <li><a href="">home</a></li>
-              <li><a href="">about</a></li>
-              <li><a href="">services</a></li>
-              <li><a href="">projects</a></li>
-              <li><a href="">team</a></li>
-              <li><a href="">testimonials</a></li>
-              <li><a href="">blog</a></li>
-              <li><a href="">contacts</a></li>
+            <ul id="nav">
+              <li><a href="#home">home</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#services">services</a></li>
+              <li><a href="#projects">projects</a></li>
+              <li><a href="#team">team</a></li>
+              <li><a href="#testimonials">testimonials</a></li>
+              <li><a href="#blog">blog</a></li>
+              <li><a href="#contacts">contacts</a></li>
             </ul>
           </nav>
         </div>
@@ -36,7 +40,7 @@
     </header><!-- header area end -->
 
     <!-- banner area start -->
-    <section class="banner-area" style="background-image: url('./ASSETS/IMAGES/banner/banner.jpg');">
+    <section class="banner-area" style="background-image: url('./ASSETS/IMAGES/banner/banner.jpg');" id="home">
       <div class="container">
         <div class="banner-content">
           <h4>welcome to out agency</h4>
@@ -51,7 +55,7 @@
     </section><!-- banner area end -->
 
     <!-- about us area start -->
-    <section class="about-area pt-100 pb-100">
+    <section class="about-area pt-100 pb-100" id="about">
       <div class="container">
         <article class="section-title text-center mb-70">
           <h4>what we do</h4>
@@ -133,7 +137,7 @@
     </section><!-- feature area end -->
 
     <!-- Services area start -->
-    <section class="service-area pt-100 pb-100">
+    <section class="service-area pt-100 pb-100" id="services">
       <div class="container">
         <article class="section-title text-center mb-70">
           <h4>what we do</h4>
@@ -205,7 +209,7 @@
     </section><!-- process area end -->
 
     <!-- projects area start -->
-    <section class="projects-area pt-100 pb-100">
+    <section class="projects-area pt-100 pb-100" id="projects">
       <div class="container">
         <article class="section-title text-center mb-70">
           <h4>what we do</h4>
@@ -215,7 +219,7 @@
         <main class="projects">
           <div class="single-projects" style="background-image: url('./ASSETS/IMAGES/projects/1.jpg');">
             <div class="project-content">
-              <a href="./ASSETS/IMAGES/projects/1.jpg">
+              <a href="./ASSETS/IMAGES/projects/1.jpg" class="magnific-popup">
                 <i class="far fa-plus-square"></i>
               </a>
               <h4>project name<span>category</span></h4>
@@ -223,7 +227,7 @@
           </div>
           <div class="single-projects" style="background-image: url('./ASSETS/IMAGES/projects/2.jpg');">
             <div class="project-content">
-              <a href="./ASSETS/IMAGES/projects/2.jpg">
+              <a href="./ASSETS/IMAGES/projects/2.jpg" class="magnific-popup">
                 <i class="far fa-plus-square"></i>
               </a>
               <h4>project name<span>category</span></h4>
@@ -231,7 +235,7 @@
           </div>
           <div class="single-projects" style="background-image: url('./ASSETS/IMAGES/projects/3.jpg');">
             <div class="project-content">
-              <a href="./ASSETS/IMAGES/projects/3.jpg">
+              <a href="./ASSETS/IMAGES/projects/3.jpg" class="magnific-popup">
                 <i class="far fa-plus-square"></i>
               </a>
               <h4>project name<span>category</span></h4>
@@ -239,7 +243,7 @@
           </div>
           <div class="single-projects" style="background-image: url('./ASSETS/IMAGES/projects/4.jpg');">
             <div class="project-content">
-              <a href="./ASSETS/IMAGES/projects/4.jpg">
+              <a href="./ASSETS/IMAGES/projects/4.jpg" class="magnific-popup">
                 <i class="far fa-plus-square"></i>
               </a>
               <h4>project name<span>category</span></h4>
@@ -247,7 +251,7 @@
           </div>
           <div class="single-projects" style="background-image: url('./ASSETS/IMAGES/projects/5.jpg');">
             <div class="project-content">
-              <a href="./ASSETS/IMAGES/projects/5.jpg">
+              <a href="./ASSETS/IMAGES/projects/5.jpg" class="magnific-popup">
                 <i class="far fa-plus-square"></i>
               </a>
               <h4>project name<span>category</span></h4>
@@ -255,7 +259,7 @@
           </div>
           <div class="single-projects" style="background-image: url('./ASSETS/IMAGES/projects/6.jpg');">
             <div class="project-content">
-              <a href="./ASSETS/IMAGES/projects/6.jpg">
+              <a href="./ASSETS/IMAGES/projects/6.jpg" class="magnific-popup">
                 <i class="far fa-plus-square"></i>
               </a>
               <h4>project name<span>category</span></h4>
@@ -271,26 +275,26 @@
         <main class="counter">
           <div class="single-counter">
             <i class="fas fa-briefcase"></i>
-            <h4><span>543</span>projects</h4>
+            <h4><span class="counter-increment">543</span>projects</h4>
           </div>
           <div class="single-counter">
             <i class="fas fa-award"></i>
-            <h4><span>32</span>awards</h4>
+            <h4><span class="counter-increment">32</span>awards</h4>
           </div>
           <div class="single-counter">
             <i class="fas fa-users"></i>
-            <h4><span>45</span>users</h4>
+            <h4><span class="counter-increment">45</span>users</h4>
           </div>
           <div class="single-counter">
             <i class="fas fa-mug-hot"></i>
-            <h4><span>2345</span>cup of coffees</h4>
+            <h4><span class="counter-increment">2345</span>cup of coffees</h4>
           </div>
         </main>
       </div>
     </section><!-- counter area end -->
 
     <!-- team area start -->
-    <section class="team-area pt-100 pb-100">
+    <section class="team-area pt-100 pb-100" id="team">
       <div class="container">
         <article class="section-title text-center mb-70">
           <h4>what we do</h4>
@@ -333,7 +337,7 @@
     <section class="video-area pt-80 pb-80" style="background-image: url('./ASSETS/IMAGES/testimonials/test_back.jpg');">
       <div class="container">
         <main class="video-content text-center">
-          <a href="https://www.youtube.com/watch?v=pVE92TNDwUk"><i class="far fa-play-circle"></i></a>
+          <a href="https://www.youtube.com/watch?v=pVE92TNDwUk" class="video-popup"><i class="far fa-play-circle"></i></a>
           <h1>we are awesome</h1>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis perspiciatis magni, ea error rem incidunt quisquam quas accusantium vitae suscipit aliquam, quis voluptatem facilis illo tempore, fugiat consequuntur sed optio.</p>
         </main>
@@ -390,7 +394,7 @@
     </section><!-- prices area end -->
 
     <!-- testimonials area start -->
-    <section class="testimonial-area pt-100 pb-100" style="background-image: url('./ASSETS/IMAGES/testimonials/test_back.jpg');">
+    <section class="testimonial-area pt-100 pb-100" style="background-image: url('./ASSETS/IMAGES/testimonials/test_back.jpg');" id="testimonials">
       <div class="container">
         <article class="section-title text-center mb-70">
           <h4>what we do</h4>
@@ -422,20 +426,20 @@
               <h4>jhon doe<span>web developer</span></h4>
             </div>
           </div>
-          <!-- <div class="single-testimonial">
+          <div class="single-testimonial">
             <i class="fas fa-quote-left"></i>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam iure quaerat quisquam enim! Dolorem voluptatibus doloremque necessitatibus neque. Laborum a ducimus aliquid. Tempore dolores maxime quos in exercitationem quis libero?</p>
             <div class="author-info">
               <img src="./ASSETS/IMAGES/team/1.jpg" alt="">
               <h4>jhon doe<span>web developer</span></h4>
             </div>
-          </div> -->
+          </div>
         </main>
       </div>
     </section><!-- testimonials area end -->
 
     <!-- blog area start -->
-    <section class="blog-area pt-100 pb-100">
+    <section class="blog-area pt-100 pb-100" id="blog">
       <div class="container">
         <article class="section-title text-center mb-70">
           <h4>what we do</h4>
@@ -506,7 +510,7 @@
     </section><!-- subscribe area end -->
 
     <!-- contact area start -->
-    <section class="contact-area pt-100 pb-100">
+    <section class="contact-area pt-100 pb-100" id="contacts">
       <div class="container">
         <article class="section-title text-center mb-70">
           <h4>what we do</h4>
@@ -574,7 +578,18 @@
       </div>
     </footer><!-- footer area end -->
 
-    <!-- javascript file included -->
+    <!-- jquery library included -->
+    <script src="./ASSETS/VENDORS/Jquery-Library/jequery-1.12.min.js"></script>
+    <!-- one page navigation scroll -->
+    <script src="./ASSETS/VENDORS/ScrollEffect/onepagenav.js"></script>
+    <!-- magnific popup jquery cdn -->
+    <script src="./ASSETS/VENDORS/Magnific-Popup/magnific-popup.min.js"></script>
+    <!-- waypoints and counter up jquery cdn -->
+    <script src="./ASSETS/VENDORS/CounterUP/waypoints.min.js"></script>
+    <script src="./ASSETS/VENDORS/CounterUP/counterup.min.js"></script>
+    <!-- slick slider jquery cdn-->
+    <script src="./ASSETS/VENDORS/Slick-Slider/slick.min.js"></script>
+    <!-- main javascript file included -->
     <script src="./ASSETS/JAVASCRIPT/app.js"></script>
   </body>
 </html>

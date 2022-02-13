@@ -12,12 +12,66 @@
     }
   }
   .testimonial {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-column-gap: 40px;
+    // display: grid;
+    // grid-template-columns: repeat(3, auto);
+    // grid-column-gap: 40px;
+
+    /* slick slider arrow next previous */
+    .slick-arrow {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border: 0;
+      background-color: $primary-color;
+      color: $second-primary-font;
+      font-size: 18px;
+      border-radius: 3px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      transition: .3s;
+      &:hover {
+        background-color: $button-hover-primary;
+      }
+      &.slick-prev {
+        left: -60px;
+      }
+      &.slick-next {
+        right: -60px;
+      }
+    }
+
+    /* slick dots */
+    .slick-dots {
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      margin-top: 15px;
+      li {
+        display: inline-block;
+        margin: 0 4px;
+        &.slick-active {
+          button {
+            background: $primary-color;
+            color: $second-primary-font;
+          }
+        }
+        button {
+          border: 0;
+          width: 15px;
+          height: 15px;
+          font-size: 10px;
+          line-height: 15px;
+          border-radius: 50%;
+          background-color: $third-primary;
+          color: $primary-font;
+        }
+      }
+    }
     .single-testimonial {
       border: 2px solid $second-primary-font;
-      padding: 40px 25px;
+      padding: 30px 20px;
       text-align: center;
       i {
         color: $second-primary-font;
@@ -52,6 +106,9 @@
           }
         }
       }
+    }
+    .slick-slide {
+      margin: 0 15px;
     }
   }
 }
