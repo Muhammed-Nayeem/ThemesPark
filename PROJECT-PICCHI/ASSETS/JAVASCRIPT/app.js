@@ -42,6 +42,13 @@ $(document).ready(function () {
     type: "iframe",
   });
 
+  //slick nav active:
+  $(function(){
+		$('#nav').slicknav({
+      label: '',
+    });
+	});
+
   //counter up:
   $(".counter-increment").counterUp();
 
@@ -60,7 +67,7 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           arrows: false,
         }
@@ -69,6 +76,7 @@ $(document).ready(function () {
         breakpoint: 480,
         settings: {
           arrows: false,
+          slidesToShow: 1,
         }
       }
     ]

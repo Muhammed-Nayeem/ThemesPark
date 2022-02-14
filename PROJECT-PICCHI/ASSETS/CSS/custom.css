@@ -414,6 +414,11 @@ img {
   color: #4864E6;
 }
 
+/*by default hide the slick nav menu*/
+.slicknav_menu {
+  display: none;
+}
+
 .banner-area {
   background-size: cover;
   background-position: center;
@@ -1483,7 +1488,277 @@ img {
 }
 
 /* Medium Device: 1280px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+  .header-area .header {
+    -ms-grid-columns: 200px auto;
+        grid-template-columns: 200px auto;
+  }
+  .about-area .about-top .about-img::after {
+    display: none;
+  }
+  .process-area .process {
+    -ms-grid-columns: (auto)[4];
+        grid-template-columns: repeat(4, auto);
+  }
+  .contact-area .contact .contact-address {
+    grid-gap: 20px;
+  }
+  .contact-area .contact .contact-address .single-address i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+  }
+  .contact-area .contact .contact-address .single-address h4 span {
+    font-size: 14px;
+  }
+}
+
 /* Tablet Device: 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 768px;
+  }
+  .slicknav_menu {
+    display: block;
+  }
+  .slicknav_menu .slicknav_btn {
+    background-color: transparent;
+  }
+  .menu {
+    display: none;
+  }
+  .header-area.sticky {
+    top: 0;
+    position: fixed;
+    padding: 25px 0;
+    background-color: #333;
+    z-index: 99;
+  }
+  .header-area .header .logo a {
+    top: 15px;
+    position: fixed;
+  }
+  .slicknav_menu {
+    display: block;
+    position: fixed;
+    z-index: 999;
+    right: 12;
+    background-color: transparent;
+    width: 100%;
+  }
+  .slicknav_menu .slicknav_btn {
+    background-color: transparent;
+  }
+  .slicknav_menu ul {
+    background-color: #333;
+  }
+  .banner-area .banner-content h1 {
+    font-size: 55px;
+  }
+  .about-area .about-top {
+    -ms-grid-columns: (48%)[2];
+        grid-template-columns: repeat(2, 48%);
+  }
+  .about-area .about-top .about-img::after {
+    display: none;
+  }
+  .about-area .about-bottom {
+    grid-gap: 20px;
+  }
+  .feature-area .feature {
+    -ms-grid-columns: (47%)[2];
+        grid-template-columns: repeat(2, 47%);
+    grid-column-gap: 2%;
+  }
+  .feature-area .feature .feature-content .feature-box {
+    grid-gap: 10px;
+  }
+  .process-area .process {
+    -ms-grid-columns: (auto)[4];
+        grid-template-columns: repeat(4, auto);
+    grid-column-gap: 15px;
+  }
+  .process-area .process h1 {
+    font-size: 20px;
+  }
+  .projects-area .projects .single-projects {
+    height: 250px;
+  }
+  .team-area .team {
+    grid-column-gap: 20px;
+  }
+  .price-area .prices {
+    grid-column-gap: 20px;
+  }
+  .price-area .prices .single-price {
+    padding: 20px 15px;
+  }
+  .price-area .prices .single-price h3 {
+    padding: 25px 0;
+  }
+  .testimonial-area .testimonial .single-testimonial {
+    padding: 20px 10px;
+  }
+  .testimonial-area .testimonial .single-testimonial p {
+    margin: 15px 0;
+  }
+  .blog-area .blogs {
+    grid-column-gap: 20px;
+  }
+  .blog-area .blogs .single-blog .blog-meta {
+    width: 90%;
+  }
+  .contact-area .contact {
+    -ms-grid-columns: 38% 57%;
+        grid-template-columns: 38% 57%;
+    grid-column-gap: 5%;
+  }
+  .contact-area .contact .contact-address {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .contact-area .contact .contact-form form input,
+  .contact-area .contact .contact-form form textarea {
+    margin-bottom: 20px;
+  }
+}
+
 /* Mobile Device: 320px */
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 300px;
+  }
+  .slicknav_menu {
+    display: block;
+  }
+  .slicknav_menu .slicknav_btn {
+    background-color: transparent;
+  }
+  .menu {
+    display: none;
+  }
+  .header-area.sticky {
+    top: 0;
+    position: fixed;
+    padding: 25px 0;
+    background-color: #333;
+    z-index: 99;
+  }
+  .header-area .header .logo a {
+    top: 15px;
+    position: fixed;
+  }
+  .slicknav_menu {
+    display: block;
+    position: fixed;
+    z-index: 999;
+    right: 0px;
+    background-color: transparent;
+    width: 100%;
+  }
+  .slicknav_menu .slicknav_btn {
+    background-color: transparent;
+  }
+  .slicknav_menu ul {
+    background-color: #333;
+  }
+  .banner-area .banner-content h1 {
+    line-height: 60px;
+  }
+  .about-area .about-top {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-gap: 50px;
+  }
+  .about-area .about-top .about-content h4 {
+    font-size: 22px;
+  }
+  .about-area .about-bottom {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .feature-area::before, .feature-area::after {
+    display: none;
+  }
+  .feature-area .feature {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .feature-area .feature .feature-content .feature-box {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-gap: 40px;
+  }
+  .service-area .services {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-gap: 40px;
+  }
+  .process-area .process {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-gap: 40px;
+  }
+  .projects-area .projects {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .counter-area .counter {
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+  }
+  .team-area .team {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-gap: 40px;
+  }
+  .video-area .video-content h1 {
+    line-height: 60px;
+  }
+  .price-area .prices {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-gap: 40px;
+  }
+  .blog-area .blogs {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-gap: 40px;
+  }
+  .subscribe-area .subscribe form input[type="submit"] {
+    padding: 12px 20px;
+    background-color: #4864e6;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #f2f4ff;
+    cursor: pointer;
+    outline: none;
+    width: 120px;
+  }
+  .contact-area .contact {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-gap: 40px;
+  }
+  .contact-area .contact .contact-address {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .partner-area .partner {
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    grid-gap: 30px;
+  }
+}
+
 /* Wide Mobile Device: 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 450px;
+  }
+}
 /*# sourceMappingURL=custom.css.map */
