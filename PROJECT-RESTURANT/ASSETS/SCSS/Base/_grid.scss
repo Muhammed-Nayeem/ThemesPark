@@ -1,0 +1,32 @@
+/* main container width and row-columns */
+.container {
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+}
+
+/* grid columns and breakpoints */
+$grid_columns: 12;
+$grid_xxl_breakpoint: 1400px;
+$grid_xl_breakpoint: 1200px;
+$grid_lg_breakpoint: 992px;
+$grid_md_breakpoint: 768px;
+$grid_sm_breakpoint: 576px;
+
+/* xxl breakpoint */
+@media (min-width: $grid_xxl_breakpoint) {
+  .container {
+    width: 1320px;
+  }
+  @for $i from 1 through 12 {
+    .col-xxl-#{$i * 1} {
+      width: (100 / 12) * $i * 1%;
+      padding: 0 15px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.header-area {
+  padding: 25px 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  transition: .3s; 
+  &.stickyNav {
+    background-color: $black;
+    padding: 22px 0;
+  }
+  .logo {
+  }
+  .menu {
+    ul {
+      li {
+        a {
+          text-transform: capitalize;
+          display: block;
+          margin-left: 20px;
+          font-weight: 500;
+          font-size: 18px;
+          color: $white;
+          &:hover {
+            color: $primary_color;
+          }
+        }
+      }
+    }
+  }
+}

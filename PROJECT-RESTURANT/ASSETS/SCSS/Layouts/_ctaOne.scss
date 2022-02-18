@@ -1,0 +1,19 @@
+.cta-area-one {
+  .section-title {
+    span {
+      color: $white;
+    }
+    h4 {
+      text-transform: capitalize;
+      font-size: 50px;
+      color: $white;
+      margin-top: 25px;
+      span {
+        display: inline-block;
+        font-size: 50px;
+        color: $primary-color;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

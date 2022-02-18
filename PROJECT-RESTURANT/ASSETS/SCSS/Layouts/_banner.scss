@@ -1,0 +1,84 @@
+.banner-area {
+  //slick slider arrow button:
+  .slick-arrow {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+    line-height: 40px;
+    z-index: 1;
+    cursor: pointer;
+    i {
+      font-size: 50px;
+      color: $primary-color;
+      transition: 0.3s;
+      &:hover {
+        color: $white;
+      }
+    }
+    &.slick-prev {
+      left: 50px;
+    }
+    &.slick-next {
+      right: 50px;
+    }
+  }
+  //slick slider arrow dots:
+  .slick-dots {
+    left: 50%;
+    bottom: 50px;
+    position: absolute;
+    transform: translateX(-50%);
+    li {
+      display: inline-block;
+      margin: 0 4px;
+      &.slick-active {
+        button {
+          background-color: $primary-color;
+        }
+      }
+      button {
+        border: 0;
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+        border-radius: 50%;
+        text-indent: -9999px;
+        background-color: $white;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+  }
+  .single-banner {
+    position: relative;
+    height: 100vh;
+    .banner-content {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        font-size: 30px;
+        color: $white;
+        text-align: center;
+      }
+      h5 {
+        font-size: 65px;
+        color: $white;
+        text-transform: capitalize;
+        text-align: center;
+        margin: 40px 0;
+        font-weight: 800;
+        line-height: 70px;
+      }
+      .banner-btn {
+        a {
+          margin: 20px 10px 0;
+        }
+      }
+    }
+  }
+}

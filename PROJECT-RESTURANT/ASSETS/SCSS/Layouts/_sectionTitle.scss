@@ -1,0 +1,34 @@
+.section-title {
+  span {
+    font-family: "Oleo Script";
+    display: block;
+    color: $black;
+    font-size: 22px;
+    text-transform: lowercase;
+  }
+  h4 {
+    text-transform: capitalize;
+    font-size: 40px;
+    color: $black;
+    margin-top: 15px;
+    display: inline-block;
+    padding-bottom: 22px;
+    position: relative;
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      background-color: $primary-color;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &::before {
+      width: 90px;
+      bottom: 0;
+    }
+    &::after {
+      width: 45px;
+      bottom: -10px;
+    }
+  }
+}

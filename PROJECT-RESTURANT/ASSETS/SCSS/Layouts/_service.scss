@@ -1,0 +1,53 @@
+.services-area {
+  .single-service {
+    border: 1px solid $gray;
+    margin-bottom: 30px;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 3px;
+    position: relative;
+    &:hover {
+      &::before {
+        transform: scaleX(1);
+        opacity: 1;
+        visibility: visible;
+      }
+      &::after {
+        transform: scaleY(1);
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      transition: 0.7s;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 1;
+    }
+    &::before {
+      border-top: 5px solid $primary_color;
+      border-bottom: 5px solid $primary_color;
+      transform: scaleX(0);
+    }
+    &::after {
+      border-right: 5px solid $primary_color;
+      border-left: 5px solid $primary_color;
+      transform: scaleY(0);
+    }
+    img {
+      width: 50px;
+    }
+    h4 {
+      text-transform: capitalize;
+      font-size: 25px;
+      margin: 20px 0;
+      color: $black;
+    }
+  }
+}

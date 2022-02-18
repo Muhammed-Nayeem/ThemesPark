@@ -1,0 +1,39 @@
+.menu-area {
+  background-color: $bg_gray;
+  border-top: 1px solid $gray;
+  border-bottom: 1px solid $gray;
+  .single-menu {
+    background-color: $white;
+    border: 1px solid $gray;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    &:hover {
+      img {
+        border-radius: 50%;
+      }
+    }
+    img {
+      max-width: 110px;
+      transition: 0.3s;
+    }
+    .menu-content {
+      margin-left: 30px;
+      h4 {
+        text-transform: capitalize;
+        font-size: 20px;
+        color: $black;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px dashed $gray;
+        span {
+          float: right;
+          color: $primary-color;
+        }
+      }
+      p {
+        line-height: 25px;
+      }
+    }
+  }
+}
