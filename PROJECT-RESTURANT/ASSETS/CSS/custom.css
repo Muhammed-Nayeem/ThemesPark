@@ -1038,4 +1038,76 @@ img {
   position: absolute;
   vertical-align: middle;
 }
+
+.footer-area {
+  color: #fff;
+}
+
+.footer-area .single-footer img {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.footer-area .single-footer h4 {
+  text-transform: capitalize;
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.footer-area .single-footer ul li {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.footer-area .single-footer ul li i {
+  margin-right: 8px;
+}
+
+.footer-area .single-footer ul li a {
+  color: #fff;
+  text-transform: capitalize;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.footer-area .single-footer ul li a:hover {
+  color: #ff3636;
+}
+
+.footer-area .footer-social {
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.footer-area .footer-social ul li {
+  display: inline-block;
+}
+
+.footer-area .footer-social ul li a {
+  display: block;
+  color: #fff;
+  margin-right: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer-area .footer-social ul li a:hover {
+  color: #ff3636;
+}
+
+.footer-area .footer-copyright {
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.footer-area .footer-copyright p {
+  text-transform: capitalize;
+  text-align: right;
+}
 /*# sourceMappingURL=custom.css.map */
