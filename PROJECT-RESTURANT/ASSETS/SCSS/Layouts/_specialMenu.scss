@@ -1,0 +1,44 @@
+.special-menu-area {
+  background-color: $bg_gray;
+  .single-special-menu {
+    border: 1px solid $gray;
+    background-color: $white;
+    position: relative;
+    img {
+      width: 100%;
+    }
+    p {
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 50%;
+      background-color: $primary_color;
+      color: $white;
+      text-align: center;
+      padding: 15px 0;
+      text-transform: capitalize;
+      font-size: 18px;
+      font-weight: 600;
+      border-bottom-right-radius: 40px;
+    }
+    .special-menu-content {
+      padding: 20px;
+      ul {
+        li {
+          color: $black;
+          margin-bottom: 5px;
+          padding-bottom: 5px;
+          font-weight: 600;
+          &:last-child {
+            border-top: 1px dashed $gray;
+            padding-top: 5px;
+          }
+          span {
+            color: $primary_color;
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}
