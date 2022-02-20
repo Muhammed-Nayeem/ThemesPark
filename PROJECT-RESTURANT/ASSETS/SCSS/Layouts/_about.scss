@@ -20,4 +20,19 @@
       }
     }
   }
+  .about-page-img {
+    border: 1px solid $gray;
+    img {
+      max-width: 100%;
+      padding: 3px;
+    }
+  }
+  .about-page-content {
+    p {
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }

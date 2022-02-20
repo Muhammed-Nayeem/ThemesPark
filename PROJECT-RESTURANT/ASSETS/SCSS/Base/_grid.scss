@@ -30,3 +30,16 @@ $grid_sm_breakpoint: 576px;
     }
   }
 }
+
+/* xl breakpoint */
+@media (min-width: $grid_xl_breakpoint) {
+  .container {
+    width: 1140px;
+  }
+  @for $i from 1 through 12 {
+    .col-xl-#{$i * 1} {
+      width: (100 / 12) * $i * 1%;
+      padding: 0 15px;
+    }
+  }
+}
