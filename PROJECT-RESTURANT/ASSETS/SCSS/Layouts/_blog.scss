@@ -4,8 +4,19 @@
     border: 1px solid $gray;
     padding: 4px;
     background-color: $white;
-    img {
-      width: 100%;
+    &:hover {
+      .blog-img {
+        img {
+          transform: scale(1.2);
+        }
+      }
+    }
+    .blog-img {
+      overflow: hidden;
+      img {
+        width: 100%;
+        transition: .3s;
+      }
     }
     .blog-meta {
       text-align: center;

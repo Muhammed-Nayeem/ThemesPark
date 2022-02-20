@@ -965,8 +965,19 @@ img {
   background-color: #fff;
 }
 
-.blog-area .single-blog img {
+.blog-area .single-blog:hover .blog-img img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.blog-area .single-blog .blog-img {
+  overflow: hidden;
+}
+
+.blog-area .single-blog .blog-img img {
   width: 100%;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .blog-area .single-blog .blog-meta {
