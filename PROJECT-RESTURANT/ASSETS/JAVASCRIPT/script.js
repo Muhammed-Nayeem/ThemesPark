@@ -26,6 +26,11 @@ $(document).ready(function () {
     nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-chevron-right"></i></button>',
   });
 
+  //one page nav activate:
+  $('#nav').onePageNav({
+    currentClass: 'current',
+  });
+
   //testimonial slider activate:
   $(".testimonial").slick({
     arrows: false,
