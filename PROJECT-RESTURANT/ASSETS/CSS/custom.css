@@ -1121,6 +1121,7 @@ img {
   border: 1px solid #ddd;
   padding: 4px;
   background-color: #fff;
+  margin-bottom: 25px;
 }
 
 .blog-area .single-blog:hover .blog-img img {
