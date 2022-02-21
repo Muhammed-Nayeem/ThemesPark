@@ -1,0 +1,62 @@
+.contact-area {
+  .contact-form {
+    width: 100%;
+    input, textarea {
+      width: 100%;
+      border: 1px solid $gray;
+      outline: none;
+      padding: 12px 15px;
+      margin-bottom: 15px;
+    }
+    input[type="submit"] {
+      background-color: $primary-color;
+      color: $white;
+      border: 0;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: 16px;
+      transition: 0.3s;
+      &:hover {
+        background-color: $black;
+      }
+    }
+  }
+  .single-address {
+    width: 100%;
+    display: flex;
+    i {
+      border: 1px solid $primary-color;
+      border-radius: 3px;
+      font-size: 22px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      color: $primary-color;
+      margin-bottom: 34px;
+      margin-right: 15px;
+    }
+    h4 {
+      text-transform: capitalize;
+      color: $black;
+      font-size: 18px;
+      margin-bottom: 8px;
+      span {
+        display: block;
+        text-transform: lowercase;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: italic;
+        color: $black;
+      }
+    }
+  }
+  iframe {
+    width: 100%;
+    border: 0;
+    vertical-align: middle;
+    height: 300px;
+    border-top: 1px solid $gray;
+    margin-top: 50px;
+  }
+}

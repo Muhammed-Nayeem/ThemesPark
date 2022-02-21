@@ -737,6 +737,78 @@ img {
   transition: .5s;
 }
 
+.contact-area .contact-form {
+  width: 100%;
+}
+
+.contact-area .contact-form input, .contact-area .contact-form textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  outline: none;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+}
+
+.contact-area .contact-form input[type="submit"] {
+  background-color: #ff3636;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contact-area .contact-form input[type="submit"]:hover {
+  background-color: #333;
+}
+
+.contact-area .single-address {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-area .single-address i {
+  border: 1px solid #ff3636;
+  border-radius: 3px;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #ff3636;
+  margin-bottom: 34px;
+  margin-right: 15px;
+}
+
+.contact-area .single-address h4 {
+  text-transform: capitalize;
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.contact-area .single-address h4 span {
+  display: block;
+  text-transform: lowercase;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+  color: #333;
+}
+
+.contact-area iframe {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+  height: 300px;
+  border-top: 1px solid #ddd;
+  margin-top: 50px;
+}
+
 .header-area {
   padding: 25px 0;
   position: fixed;
