@@ -1,0 +1,94 @@
+.gallery-area {
+  .single-gallery {
+    position: relative;
+    background-color: $black;
+    border-radius: 3px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    &:hover {
+      &::before {
+        transform: scaleX(1);
+        visibility: visible;
+        opacity: 1;
+      }
+      &::after {
+        transform: scaleY(1);
+        visibility: visible;
+        opacity: 1;
+      }
+      img {
+        transform: scale(1.2);
+        opacity: 0.3;
+      }
+      .content {
+        a {
+          transform: translateY(0);
+          visibility: visible;
+          opacity: 1;
+        }
+        h4 {
+          transform: translateY(0);
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      right: 25px;
+      bottom: 25px;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 1;
+      transition: .5s;
+    }
+    &::before {
+      border-top: 5px solid $primary-color;
+      border-bottom: 5px solid $primary-color;
+      transform: scaleX(0);
+    }
+    &::after {
+      border-left: 5px solid $primary-color;
+      border-right: 5px solid $primary-color;
+      transform: scaleY(0);
+    }
+    .image-box {
+      img {
+        width: 100%;
+        transition: .5s;
+      }
+    }
+    .content {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translateY(-50%);
+      text-align: center;
+      padding: 6px;
+      a {
+        display: inline-block;
+        color: $white;
+        font-size: 35px;
+        margin-bottom: 15px;
+        transform: translateY(-50px);
+        cursor: pointer;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+      }
+      h4 {
+        color: $white;
+        text-transform: capitalize;
+        font-size: 22px;
+        transform: translateY(50px);
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+      }
+    }
+  }
+}

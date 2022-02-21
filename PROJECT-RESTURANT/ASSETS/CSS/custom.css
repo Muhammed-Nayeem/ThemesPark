@@ -623,6 +623,120 @@ img {
   color: #ff3636;
 }
 
+.gallery-area .single-gallery {
+  position: relative;
+  background-color: #333;
+  border-radius: 3px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.gallery-area .single-gallery:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  visibility: visible;
+  opacity: 1;
+}
+
+.gallery-area .single-gallery:hover::after {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  visibility: visible;
+  opacity: 1;
+}
+
+.gallery-area .single-gallery:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0.3;
+}
+
+.gallery-area .single-gallery:hover .content a {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+.gallery-area .single-gallery:hover .content h4 {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+.gallery-area .single-gallery::before, .gallery-area .single-gallery::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.gallery-area .single-gallery::before {
+  border-top: 5px solid #ff3636;
+  border-bottom: 5px solid #ff3636;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.gallery-area .single-gallery::after {
+  border-left: 5px solid #ff3636;
+  border-right: 5px solid #ff3636;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+.gallery-area .single-gallery .image-box img {
+  width: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.gallery-area .single-gallery .content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  padding: 6px;
+}
+
+.gallery-area .single-gallery .content a {
+  display: inline-block;
+  color: #fff;
+  font-size: 35px;
+  margin-bottom: 15px;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.gallery-area .single-gallery .content h4 {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 22px;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 .header-area {
   padding: 25px 0;
   position: fixed;
