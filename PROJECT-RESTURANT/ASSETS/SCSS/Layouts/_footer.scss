@@ -1,9 +1,21 @@
 .footer-area {
   color: $white;
   .single-footer {
+    @include min-md {
+      margin-bottom: 30px;
+    }
+    @include min-lg {
+      margin-bottom: 40px;
+    }
     img {
       width: 100%;
       margin-top: 80px;
+      @include min-md {
+        width: 70%;
+      }
+      @include min-lg {
+        width: 60%;
+      }
     }
     h4 {
       text-transform: capitalize;

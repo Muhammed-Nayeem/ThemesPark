@@ -54,16 +54,31 @@
   .single-banner {
     position: relative;
     height: 100vh;
+    @include min-md {
+      height: 60vh;
+    }
+    @include min-lg {
+      height: 80vh;
+    }
     .banner-content {
       height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      @include min-md {
+        height: 60vh;
+      }
+      @include min-lg {
+        height: 80vh;
+      }
       h2 {
         font-size: 30px;
         color: $white;
         text-align: center;
+        @include min-md {
+          font-size: 25px;
+        }
       }
       h5 {
         font-size: 65px;
@@ -73,6 +88,14 @@
         margin: 40px 0;
         font-weight: 800;
         line-height: 70px;
+        @include min-md {
+          font-size: 45px;
+          margin: 20px 0;
+          line-height: 45px;
+        }
+        @include min-lg {
+          font-size: 60px;
+        }
       }
       .banner-btn {
         a {

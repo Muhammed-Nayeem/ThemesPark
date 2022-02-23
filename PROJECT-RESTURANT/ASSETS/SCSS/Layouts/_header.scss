@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   z-index: 99;
-  transition: .3s; 
+  transition: 0.3s;
   &.stickyNav {
     background-color: $black;
     padding: 22px 0;
@@ -23,6 +23,10 @@
           color: $white;
           &:hover {
             color: $primary_color;
+          }
+          @include min-md {
+            margin-left: 12px;
+            font-size: 15px;
           }
         }
       }

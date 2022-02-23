@@ -8,11 +8,24 @@
       font-size: 50px;
       color: $white;
       margin-top: 25px;
+      @include min-md {
+        font-size: 40;
+        line-height: 55px;
+      }
+      @include min-lg {
+        font-size: 40px;
+      }
       span {
         display: inline-block;
         font-size: 50px;
         color: $primary-color;
         text-transform: uppercase;
+        @include min-md {
+          font-size: 40px;
+        }
+        @include min-lg {
+          font-size: 40px;
+        }
       }
     }
   }

@@ -72,6 +72,7 @@ $text-align: left, right, center, justify;
 .bg {
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   z-index: 2;
   &::before {

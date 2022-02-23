@@ -16,7 +16,7 @@
       overflow: hidden;
       img {
         width: 100%;
-        transition: .3s;
+        transition: 0.3s;
       }
     }
     .blog-meta {
@@ -32,6 +32,13 @@
         transition: 0.3s;
         &:hover {
           color: $primary-color;
+        }
+        @include min-md {
+          margin: 12px 14px;
+        }
+        @include min-lg {
+          font-size: 15px;
+          margin: 12px 10px;
         }
       }
     }

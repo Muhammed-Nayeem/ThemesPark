@@ -4,6 +4,9 @@
     border: 1px solid $gray;
     position: relative;
     overflow: hidden;
+    @include min-md {
+      margin-bottom: 25px;
+    }
     &:hover {
       .team-content {
         bottom: 0;

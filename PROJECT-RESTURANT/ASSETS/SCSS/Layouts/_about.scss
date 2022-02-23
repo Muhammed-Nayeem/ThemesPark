@@ -7,16 +7,36 @@
   }
   .about-gallery {
     position: relative;
+    margin-top: 30px;
     img {
       border: 1px solid $gray;
       &:nth-child(1) {
-        max-width: 450px;
+        max-width: 430px;
+        @include min-md {
+          max-width: 380px;
+        }
+        @include min-lg {
+          max-width: 275px;
+        }
       }
       &:nth-child(2) {
         position: absolute;
         right: 5px;
         bottom: -140px;
         max-width: 450px;
+        @include min-md {
+          right: 100px;
+          bottom: -60px;
+          max-width: 380px;
+        }
+        @include min-lg {
+          bottom: -115px;
+          max-width: 265px;
+        }
+        @include min-xl {
+          right: 2px;
+          max-width: 380px;
+        }
       }
     }
   }

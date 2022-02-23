@@ -4,6 +4,9 @@
     border: 1px solid $gray;
     background-color: $white;
     position: relative;
+    @include min-md {
+      margin-bottom: 25px;
+    }
     img {
       width: 100%;
     }
