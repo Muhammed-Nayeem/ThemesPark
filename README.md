@@ -6,3 +6,5 @@
 - PROJECT-GRID: [live-link](https://muhammed-nayeem.github.io/ThemesPark/GRID-Project/)
 
 - PROJECT-PICCHI: [live-link](https://muhammed-nayeem.github.io/ThemesPark/PROJECT-PICCHI/)
+
+- PROJECT-RESTAURANT: [live-link](https://muhammed-nayeem.github.io/ThemesPark/PROJECT-RESTURANT/) 
