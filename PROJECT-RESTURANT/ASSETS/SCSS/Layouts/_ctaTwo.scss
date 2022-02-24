@@ -1,17 +1,36 @@
 .cta-area-two {
   background-color: $primary-color;
   .cta-two-content {
+    @include max-xs {
+      margin-bottom: 30px;
+    }
+    @include min-sm {
+      margin-bottom: 40px;
+    }
     h2 {
       text-align: right;
       color: $white;
       text-transform: uppercase;
       font-size: 50px;
+      @include max-xs {
+        text-align: center;
+        font-size: 40px;
+      }
+      @include min-sm {
+        text-align: center;
+      }
       @include min-md {
         font-size: 47px;
       }
     }
   }
   .cta-two-contact {
+    @include max-xs {
+      text-align: center;
+    }
+    @include min-sm {
+      text-align: center;
+    }
     a {
       display: block;
       color: $white;

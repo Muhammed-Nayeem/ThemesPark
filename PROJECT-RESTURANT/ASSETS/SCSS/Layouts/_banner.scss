@@ -54,6 +54,9 @@
   .single-banner {
     position: relative;
     height: 100vh;
+    @include min-sm {
+      height: 60vh;
+    }
     @include min-md {
       height: 60vh;
     }
@@ -66,6 +69,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      @include min-sm {
+        height: 60vh;
+      }
       @include min-md {
         height: 60vh;
       }
@@ -76,6 +82,9 @@
         font-size: 30px;
         color: $white;
         text-align: center;
+        @include min-sm {
+          font-size: 20px;
+        }
         @include min-md {
           font-size: 25px;
         }
@@ -88,6 +97,11 @@
         margin: 40px 0;
         font-weight: 800;
         line-height: 70px;
+        @include min-sm {
+          font-size: 45px;
+          margin: 10px 0;
+          line-height: 50px;
+        }
         @include min-md {
           font-size: 45px;
           margin: 20px 0;
@@ -100,6 +114,9 @@
       .banner-btn {
         a {
           margin: 20px 10px 0;
+          @include min-sm {
+            margin: 10px 10px 0;
+          }
         }
       }
     }

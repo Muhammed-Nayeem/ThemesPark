@@ -1,6 +1,12 @@
 .footer-area {
   color: $white;
   .single-footer {
+    @include max-xs {
+      margin-bottom: 25px;
+    }
+    @include min-sm {
+      margin-bottom: 25px;
+    }
     @include min-md {
       margin-bottom: 30px;
     }
@@ -10,6 +16,11 @@
     img {
       width: 100%;
       margin-top: 80px;
+      @include max-xs {
+        width: 65%;
+        margin: 0 auto;
+        display: block;
+      }
       @include min-md {
         width: 70%;
       }
@@ -18,10 +29,29 @@
       }
     }
     h4 {
+      display: inline-block;
       text-transform: capitalize;
       color: $white;
-      margin-bottom: 15px;
       font-size: 25px;
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      position: relative;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background-color: $primary-color;
+      }
+      &::before {
+        bottom: 0;
+        width: 60px;
+      }
+      &::after {
+        left: 0;
+        bottom: -8px;
+        width: 40px;
+      }
     }
     ul {
       li {
@@ -48,6 +78,9 @@
     border-top: 1px solid $gray;
     margin-top: 20px;
     padding-top: 20px;
+    @include max-xs {
+      text-align: center;
+    }
     ul {
       li {
         display: inline-block;
@@ -70,6 +103,9 @@
     p {
       text-transform: capitalize;
       text-align: right;
+      @include max-xs {
+        text-align: center;
+      }
     }
   }
 }

@@ -7,11 +7,25 @@
   }
   .about-gallery {
     position: relative;
-    margin-top: 30px;
+    @include max-xs {
+      margin-top: 80px;
+    }
+    @include min-sm {
+      margin-top: 30px;
+    }
+    @include min-md {
+      margin-top: 30px;
+    }
     img {
       border: 1px solid $gray;
       &:nth-child(1) {
         max-width: 430px;
+        @include max-xs {
+          max-width: 100%;
+        }
+        @include min-sm {
+          max-width: 300px;
+        }
         @include min-md {
           max-width: 380px;
         }
@@ -24,6 +38,17 @@
         right: 5px;
         bottom: -140px;
         max-width: 450px;
+        @include max-xs {
+          max-width: 100%;
+          position: inherit;
+          right: 0;
+          bottom: 85px;
+        }
+        @include min-sm {
+          max-width: 300px;
+          right: 40px;
+          bottom: -70px;
+        }
         @include min-md {
           right: 100px;
           bottom: -60px;

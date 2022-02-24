@@ -10,7 +10,7 @@ window.onscroll = () => {
   } else {
     stickyHeader.classList.remove("stickyNav");
   }
-}
+};
 
 /**
  * Jquery Function:
@@ -34,5 +34,14 @@ $(document).ready(function () {
     infinite: true,
     autoplay: true,
     loop: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 });

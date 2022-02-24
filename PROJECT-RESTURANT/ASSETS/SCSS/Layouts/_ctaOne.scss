@@ -8,6 +8,16 @@
       font-size: 50px;
       color: $white;
       margin-top: 25px;
+      @include max-xs {
+        font-size: 35px;
+        margin-top: 15px;
+        line-height: 40px;
+      }
+      @include min-sm {
+        font-size: 40px;
+        margin-top: 15px;
+        line-height: 45px;
+      }
       @include min-md {
         font-size: 40;
         line-height: 55px;
@@ -20,6 +30,12 @@
         font-size: 50px;
         color: $primary-color;
         text-transform: uppercase;
+        @include max-xs {
+          font-size: 35px;
+        }
+        @include min-sm {
+          font-size: 40px;
+        }
         @include min-md {
           font-size: 40px;
         }

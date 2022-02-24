@@ -14,6 +14,9 @@
     display: inline-block;
     padding-bottom: 22px;
     position: relative;
+    @include max-xs {
+      font-size: 38px;
+    }
     &::before,
     &::after {
       content: "";

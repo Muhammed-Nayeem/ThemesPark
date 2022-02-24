@@ -4,6 +4,12 @@
     border: 1px solid $gray;
     position: relative;
     overflow: hidden;
+    @include max-xs {
+      margin-bottom: 20px;
+    }
+    @include min-sm {
+      margin-bottom: 25px;
+    }
     @include min-md {
       margin-bottom: 25px;
     }
