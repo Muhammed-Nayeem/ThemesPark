@@ -23,7 +23,7 @@ $grid_sm_breakpoint: 576px;
   .container {
     width: 100%;
   }
-  .justify-sm-content {
+  .justify-sx-content {
     justify-content: center;
   }
   .col {
@@ -52,6 +52,9 @@ $grid_sm_breakpoint: 576px;
 @media (min-width: $grid_md_breakpoint) {
   .container {
     width: 720px;
+  }
+  .justify-md-content {
+    justify-content: flex-end;
   }
   @for $i from 1 through 12 {
     .col-md-#{$i * 1} {

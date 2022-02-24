@@ -19,9 +19,15 @@
     }
     &.slick-prev {
       left: 50px;
+      @include max-xs {
+        left: 30px;
+      }
     }
     &.slick-next {
       right: 50px;
+      @include max-xs {
+        right: 30px;
+      }
     }
   }
   //slick slider arrow dots:
@@ -54,6 +60,9 @@
   .single-banner {
     position: relative;
     height: 100vh;
+    @include max-xs {
+      height: 50vh;
+    }
     @include min-sm {
       height: 60vh;
     }
@@ -69,6 +78,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      @include max-xs {
+        height: 50vh;
+      }
       @include min-sm {
         height: 60vh;
       }
@@ -82,6 +94,9 @@
         font-size: 30px;
         color: $white;
         text-align: center;
+        @include max-xs {
+          font-size: 20px;
+        }
         @include min-sm {
           font-size: 20px;
         }
@@ -97,6 +112,11 @@
         margin: 40px 0;
         font-weight: 800;
         line-height: 70px;
+        @include max-xs {
+          font-size: 35px;
+          margin: 10px 0;
+          line-height: 45px;
+        }
         @include min-sm {
           font-size: 45px;
           margin: 10px 0;
@@ -114,6 +134,9 @@
       .banner-btn {
         a {
           margin: 20px 10px 0;
+          @include max-xs {
+            margin: 10px 5px 0;
+          }
           @include min-sm {
             margin: 10px 10px 0;
           }

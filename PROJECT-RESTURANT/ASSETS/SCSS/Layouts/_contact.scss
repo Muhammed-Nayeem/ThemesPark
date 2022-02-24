@@ -1,5 +1,11 @@
 .contact-area {
   .contact-form {
+    @include max-xs {
+      margin-bottom: 30px;
+    }
+    @include min-sm {
+      margin-bottom: 30px;
+    }
     width: 100%;
     input, textarea {
       width: 100%;
@@ -27,6 +33,12 @@
     margin-bottom: 32px;
     &:last-child {
       margin-bottom: 0;
+    }
+    @include min-md {
+      margin-bottom: 19px;
+    }
+    @include min-lg {
+      margin-bottom: 26px;
     }
     @include min-xl {
       margin-bottom: 27px;

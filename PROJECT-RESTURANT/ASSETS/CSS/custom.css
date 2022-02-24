@@ -357,7 +357,7 @@ img {
   display: inline-block;
   color: #fff;
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   border-radius: 3px;
   -webkit-transition: 0.3s;
@@ -366,7 +366,7 @@ img {
 
 .btn.btn-primary {
   background-color: #ff3636;
-  padding: 12px 25px;
+  padding: 12px 20px;
 }
 
 .btn.btn-primary:hover {
@@ -395,7 +395,7 @@ img {
   .container {
     width: 100%;
   }
-  .justify-sm-content {
+  .justify-sx-content {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -470,6 +470,11 @@ img {
 @media (min-width: 768px) {
   .container {
     width: 720px;
+  }
+  .justify-md-content {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .col-md-1 {
     width: 8.33333%;
@@ -707,7 +712,7 @@ img {
 
 @media (max-width: 576px) {
   .section-title h4 {
-    font-size: 38px;
+    font-size: 28px;
   }
 }
 
@@ -763,11 +768,11 @@ img {
 }
 
 .breadcrumb-area {
-  height: 70vh;
+  height: 50vh;
 }
 
 .breadcrumb-area .breadcrumb-content {
-  height: 70vh;
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -935,6 +940,18 @@ img {
   width: 100%;
 }
 
+@media (max-width: 576px) {
+  .contact-area .contact-form {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .contact-area .contact-form {
+    margin-bottom: 30px;
+  }
+}
+
 .contact-area .contact-form input, .contact-area .contact-form textarea {
   width: 100%;
   border: 1px solid #ddd;
@@ -968,6 +985,18 @@ img {
 
 .contact-area .single-address:last-child {
   margin-bottom: 0;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .contact-area .single-address {
+    margin-bottom: 19px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .contact-area .single-address {
+    margin-bottom: 26px;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -1139,8 +1168,20 @@ img {
   left: 50px;
 }
 
+@media (max-width: 576px) {
+  .banner-area .slick-arrow.slick-prev {
+    left: 30px;
+  }
+}
+
 .banner-area .slick-arrow.slick-next {
   right: 50px;
+}
+
+@media (max-width: 576px) {
+  .banner-area .slick-arrow.slick-next {
+    right: 30px;
+  }
 }
 
 .banner-area .slick-dots {
@@ -1175,6 +1216,12 @@ img {
 .banner-area .single-banner {
   position: relative;
   height: 100vh;
+}
+
+@media (max-width: 576px) {
+  .banner-area .single-banner {
+    height: 50vh;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -1212,6 +1259,12 @@ img {
           align-items: center;
 }
 
+@media (max-width: 576px) {
+  .banner-area .single-banner .banner-content {
+    height: 50vh;
+  }
+}
+
 @media (min-width: 576px) and (max-width: 768px) {
   .banner-area .single-banner .banner-content {
     height: 60vh;
@@ -1236,6 +1289,12 @@ img {
   text-align: center;
 }
 
+@media (max-width: 576px) {
+  .banner-area .single-banner .banner-content h2 {
+    font-size: 20px;
+  }
+}
+
 @media (min-width: 576px) and (max-width: 768px) {
   .banner-area .single-banner .banner-content h2 {
     font-size: 20px;
@@ -1256,6 +1315,14 @@ img {
   margin: 40px 0;
   font-weight: 800;
   line-height: 70px;
+}
+
+@media (max-width: 576px) {
+  .banner-area .single-banner .banner-content h5 {
+    font-size: 35px;
+    margin: 10px 0;
+    line-height: 45px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -1282,6 +1349,12 @@ img {
 
 .banner-area .single-banner .banner-content .banner-btn a {
   margin: 20px 10px 0;
+}
+
+@media (max-width: 576px) {
+  .banner-area .single-banner .banner-content .banner-btn a {
+    margin: 10px 5px 0;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -1397,6 +1470,19 @@ img {
 
 .about-area .about-page-img {
   border: 1px solid #ddd;
+}
+
+@media (max-width: 576px) {
+  .about-area .about-page-img {
+    margin: 20px 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .about-area .about-page-img {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
 }
 
 .about-area .about-page-img img {
@@ -1894,7 +1980,7 @@ img {
 @media (max-width: 576px) {
   .cta-area-two .cta-two-content h2 {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 
