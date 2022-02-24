@@ -1028,10 +1028,38 @@ img {
   padding: 22px 0;
 }
 
+@media (max-width: 576px) {
+  .header-area.stickyNav {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-area .logo {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+  }
+}
+
 @media (min-width: 576px) and (max-width: 768px) {
   .header-area .logo {
     text-align: center;
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-area .menu {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .header-area .menu ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1058,6 +1086,29 @@ img {
   .header-area .menu ul li a {
     margin-left: 12px;
     font-size: 15px;
+  }
+}
+
+.slicknav_menu {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .slicknav_menu {
+    display: block;
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    background-color: transparent;
+    width: 100%;
+  }
+  .slicknav_menu .slicknav_btn {
+    background-color: transparent;
+    margin-top: 12px;
+  }
+  .slicknav_menu ul {
+    background-color: #333;
+    margin: 0;
   }
 }
 

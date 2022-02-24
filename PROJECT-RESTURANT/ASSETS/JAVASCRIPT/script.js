@@ -44,4 +44,9 @@ $(document).ready(function () {
       },
     ],
   });
+
+  //mobile menu slick nav activate:
+  $('#nav').slicknav({
+    label: '',
+  });
 });
