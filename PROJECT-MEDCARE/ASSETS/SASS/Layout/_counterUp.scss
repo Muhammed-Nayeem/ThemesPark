@@ -22,12 +22,14 @@
       h3 {
         text-transform: capitalize;
         padding: 0.5rem 0;
-        margin: 12px 0;
+        margin: 25px 0;
         font-size: 40px;
         color: $black;
         text-shadow: $text_shadow;
       }
       p {
+        color: $black_light;
+        font-size: 17px;
       }
     }
   }
