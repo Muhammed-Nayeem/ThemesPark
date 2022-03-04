@@ -1,0 +1,47 @@
+.header-area {
+  background-color: $white;
+  padding: 20px 9%;
+  box-shadow: $header_shadow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    a {
+      display: inline-block;
+      font-size: 25px;
+      color: $black;
+      font-weight: 600;
+      i {
+        color: $green;
+      }
+    }
+  }
+  .menu {
+    ul {
+      display: flex;
+      li {
+        a {
+          display: block;
+          text-transform: capitalize;
+          font-size: 17px;
+          color: $black_light;
+          font-weight: 500;
+          margin-left: 20px;
+          &:hover {
+            color: $green;
+          }
+        }
+      }
+    }
+  }
+  #menu-btn {
+    font-size: 25px;
+    color: $green;
+    background-color: $hamburger;
+    padding: 8px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+  }
+}

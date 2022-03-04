@@ -6,6 +6,7 @@
 
 a {
   text-decoration: none;
+  transition: 0.5s;
 }
 
 ul {
@@ -17,3 +18,26 @@ img {
   vertical-align: middle;
 }
 
+/*text property*/
+$text: left, right, center, justify;
+@each $prop in $text {
+  .text-#{$prop} {
+    text-align: $prop;
+  }
+}
+
+/*margin and padding*/
+@for $i from 1 through 10 {
+  .pt-#{$i * 10} {
+    padding-top: ($i * 10) + px;
+  }
+  .pb-#{$i * 10} {
+    padding-bottom: ($i * 10) + px;
+  }
+  .mt-#{$i * 10} {
+    margin-top: ($i * 10) + px;
+  }
+  .mt-#{$i * 10} {
+    margin-bottom: ($i * 10) + px;
+  }
+}
