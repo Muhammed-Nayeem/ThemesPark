@@ -1,16 +1,29 @@
 .banner-area {
   background-color: $banner_back;
-  .banner-image {
-    img {
-
+  .banner-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    .banner-image {
+      flex-basis: 50%;
+      img {
+        width: 100%;
+      }
     }
-  }
-  .banner-text {
-    h2 {
-
-    }
-    p {
-
+    .banner-text {
+      flex-basis: 50%;
+      h2 {
+        text-transform: capitalize;
+        color: $black;
+        font-size: 3rem;
+        margin-bottom: 35px;
+        text-shadow: $text_shadow;
+      }
+      p {
+        margin: 20px 0;
+        color: $black_light;
+      }
     }
   }
 }

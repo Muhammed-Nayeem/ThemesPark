@@ -18,6 +18,13 @@ img {
   vertical-align: middle;
 }
 
+/* container */
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 /*text property*/
 $text: left, right, center, justify;
 @each $prop in $text {
@@ -39,5 +46,37 @@ $text: left, right, center, justify;
   }
   .mt-#{$i * 10} {
     margin-bottom: ($i * 10) + px;
+  }
+}
+
+/* button style */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.4rem;
+  border: $border;
+  border-radius: 0.5rem;
+  box-shadow: $box_shadow;
+  color: $green;
+  cursor: pointer;
+  font-size: 1rem;
+  background: $white;
+  text-transform: capitalize;
+  &:hover {
+    background-color: $green;
+    color: $white;
+    i {
+      background-color: $white;
+      color: $green;
+      margin-left: 1rem;
+    }
+  }
+  i {
+    padding: 0.4rem 0.5rem;
+    border-radius: 0.5rem;
+    background: $green;
+    color: $white;
+    margin-left: 0.5rem;
+    transition: 0.3s;
   }
 }

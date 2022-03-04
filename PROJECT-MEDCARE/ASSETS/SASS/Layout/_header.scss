@@ -1,11 +1,20 @@
 .header-area {
-  background-color: $white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
   padding: 20px 9%;
-  box-shadow: $header_shadow;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  transition: .3s;
+  &.sticky {
+    background-color: $white;
+    box-shadow: $header_shadow;
+    padding: 23px 9%;
+    transition: .3s;
+  }
   .logo {
     a {
       display: inline-block;

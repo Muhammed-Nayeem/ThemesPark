@@ -1,0 +1,34 @@
+.counter-area {
+  background-color: $white;
+  position: relative;
+  // &::before {
+  //   content: "MEDCARE";
+  //   position: absolute;
+  //   color: $black;
+  // }
+  .counter-box {
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    grid-gap: 4%;
+    .single-counter {
+      border: $border;
+      border-radius: 5px;
+      text-align: center;
+      padding: 30px 10px;
+      i {
+        font-size: 40px;
+        color: $green;
+      }
+      h3 {
+        text-transform: capitalize;
+        padding: 0.5rem 0;
+        margin: 12px 0;
+        font-size: 40px;
+        color: $black;
+        text-shadow: $text_shadow;
+      }
+      p {
+      }
+    }
+  }
+}
