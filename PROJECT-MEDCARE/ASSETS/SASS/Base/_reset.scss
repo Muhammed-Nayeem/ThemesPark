@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  transition: .3s;
+}
+
 a {
   text-decoration: none;
   transition: 0.5s;
