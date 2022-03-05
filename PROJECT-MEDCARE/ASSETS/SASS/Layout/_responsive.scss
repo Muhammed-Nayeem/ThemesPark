@@ -1,0 +1,144 @@
+/*large device: 1280px*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+  .banner-area {
+    .banner-content {
+      .banner-text {
+        h2 {
+          line-height: 60px;
+        }
+      }
+    }
+  }
+  .footer-area {
+    .footer-wrapper {
+      grid-template-columns: 26% 19% 20% 23%;
+    }
+  }
+}
+
+/*medium device: 768px*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
+  .header-area {
+    .menu {
+      ul {
+        li {
+          a {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  .banner-area .banner-content .banner-text h2 {
+    font-size: 2rem;
+  }
+  .services-area .services-box .single-service h2 {
+    font-size: 24px;
+  }
+  .about-area .about-box .single-about-text h2 {
+    font-size: 2rem;
+  }
+  .doctor-area .doctor-box {
+    grid-template-columns: repeat(2, auto);
+  }
+  .footer-area .footer-wrapper {
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 20px;
+  }
+}
+
+/*mobile device: 320px*/
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 320px;
+  }
+  .header-area #menu-btn {
+    display: initial;
+  }
+  .header-area .menu {
+    position: absolute;
+    top: 115%;
+    right: 2rem;
+    border-radius: 0.5rem;
+    width: 15rem;
+    border: $border;
+    background: $white;
+    padding: 20px 12px;
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: top right;
+    transition: none;
+  }
+  .header-area .menu.active {
+    transform: scale(1);
+    opacity: 1;
+    transition: 0.2s ease-out;
+  }
+  .header-area .menu ul {
+    display: inherit;
+    li {
+      margin-bottom: 15px;
+    }
+  }
+  .banner-area .banner-content .banner-image {
+    flex-basis: 100%;
+  }
+  .banner-area .banner-content .banner-text {
+    flex-basis: 100%;
+    h2 {
+      line-height: 60px;
+    }
+  }
+  .counter-area .counter-box {
+    grid-template-columns: auto;
+    justify-content: inherit;
+    .single-counter {
+      margin-bottom: 20px;
+    }
+  }
+  .services-area .services-box {
+    grid-template-columns: auto;
+  }
+  .about-area .about-box {
+    grid-template-columns: auto;
+    justify-content: inherit;
+  }
+  .doctor-area .doctor-box {
+    grid-template-columns: auto;
+  }
+  .section-title h1 {
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .appointment-area .appointment-box {
+    grid-template-columns: auto;
+  }
+  .client-area .client-box {
+    grid-template-columns: auto;
+    grid-gap: 30px;
+  }
+  .blog-area .blogs-box {
+    grid-template-columns: auto;
+    grid-gap: 30px;
+  }
+  .contact-area .contact-box {
+    grid-template-columns: auto;
+  }
+  .footer-area .footer-wrapper {
+    grid-template-columns: auto;
+    grid-gap: 30px;
+  }
+}
+
+/*wide mobile device: 480px*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 450px;
+  }
+}

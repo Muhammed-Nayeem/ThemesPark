@@ -1,15 +1,9 @@
 .counter-area {
   background-color: $white;
-  position: relative;
-  // &::before {
-  //   content: "MEDCARE";
-  //   position: absolute;
-  //   color: $black;
-  // }
   .counter-box {
     display: grid;
-    grid-template-columns: repeat(4, 22%);
-    grid-gap: 4%;
+    grid-template-columns: repeat(4, 24%);
+    justify-content: space-between;
     .single-counter {
       border: $border;
       border-radius: 5px;

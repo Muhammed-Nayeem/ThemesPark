@@ -1,10 +1,15 @@
-let navBar = document.querySelector(".header-area");
+/**
+ * responsive navbar:
+ */
+let menubar = document.querySelector(".menu");
+let menuBtn = document.querySelector("#menu-btn");
+
+menuBtn.onclick = () => {
+  menuBtn.classList.toggle("fa-times");
+  menubar.classList.toggle("active");
+}
 
 window.onscroll = () => {
-  let scrollHeight = window.scrollY;
-  if (scrollHeight >= 25) {
-    navBar.classList.add("sticky");
-  } else {
-    navBar.classList.remove("sticky");
-  }
-};
+  menuBtn.classList.remove("fa-times");
+  menubar.classList.remove("active");
+}

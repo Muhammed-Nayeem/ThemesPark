@@ -8,13 +8,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  transition: .3s;
-  &.sticky {
-    background-color: $white;
-    box-shadow: $header_shadow;
-    padding: 23px 9%;
-    transition: .3s;
-  }
+  background-color: $white;
   .logo {
     a {
       display: inline-block;

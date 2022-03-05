@@ -1,0 +1,40 @@
+.services-area {
+  background-color: $banner_back;
+  .services-box {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    justify-content: space-between;
+    grid-gap: 20px;
+    .single-service {
+      border: $border;
+      background-color: $white;
+      text-align: left;
+      padding: 25px 15px;
+      border-radius: 5px;
+      i {
+        font-size: 45px;
+        color: $green;
+      }
+      h2 {
+        text-transform: capitalize;
+        font-size: 25px;
+        color: $black;
+        margin: 20px 0;
+      }
+      p {
+        color: $black_light;
+      }
+      a {
+        i {
+          font-size: 12px;
+          color: $white;
+        }
+        &:hover {
+          i {
+            color: $green;
+          }
+        }
+      }
+    }
+  }
+}

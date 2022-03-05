@@ -1,0 +1,61 @@
+.client-area {
+  background-color: $banner_back;
+  .client-box {
+    display: grid;
+    grid-template-columns: repeat(3, 31%);
+    justify-content: space-between;
+    .single-client {
+      text-align: center;
+      padding: 2.5rem;
+      overflow: hidden;
+      position: relative;
+      background-color: $white;
+      border-radius: 5px;
+      z-index: 0;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -2rem;
+        left: 50%;
+        width: 120%;
+        height: 15rem;
+        background-color: $green;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+      }
+      img {
+        max-width: 80px;
+        border-radius: 50%;
+        border: 3px solid $white;
+        object-fit: cover;
+      }
+      .client-profile {
+        margin: 15px 0;
+        h3 {
+          text-transform: capitalize;
+          font-size: 20px;
+          margin-bottom: 10px;
+          color: $white;
+        }
+        ul {
+          display: flex;
+          justify-content: center;
+          li {
+            margin: 0 3px;
+            i {
+              color: $white;
+            }
+          }
+        }
+      }
+      .client-profile-text {
+        margin-top: 35px;
+        p {
+          color: $black_light;
+        }
+      }
+    }
+  }
+}
