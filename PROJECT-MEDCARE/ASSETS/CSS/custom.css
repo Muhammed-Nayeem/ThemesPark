@@ -395,6 +395,8 @@ img {
   border-radius: 5px;
   text-align: center;
   padding: 30px 10px;
+  -webkit-box-shadow: 0.3rem 0.3rem 0 rgba(22, 160, 133, 0.2);
+          box-shadow: 0.3rem 0.3rem 0 rgba(22, 160, 133, 0.2);
 }
 
 .counter-area .counter-box .single-counter i {
@@ -437,6 +439,8 @@ img {
   text-align: left;
   padding: 25px 15px;
   border-radius: 5px;
+  -webkit-box-shadow: 0.3rem 0.3rem 0 rgba(22, 160, 133, 0.2);
+          box-shadow: 0.3rem 0.3rem 0 rgba(22, 160, 133, 0.2);
 }
 
 .services-area .services-box .single-service i {
@@ -522,6 +526,8 @@ img {
   text-align: center;
   border-radius: 5px;
   background-color: #ffff;
+  -webkit-box-shadow: 0.3rem 0.3rem 0 rgba(22, 160, 133, 0.2);
+          box-shadow: 0.3rem 0.3rem 0 rgba(22, 160, 133, 0.2);
   position: relative;
   overflow: hidden;
   -webkit-transition: 0.5s;
@@ -646,6 +652,8 @@ img {
   border: 0.2rem solid #16a085;
   border-radius: 5px;
   padding: 30px 25px;
+  -webkit-box-shadow: 0.3rem 0.3rem 0 rgba(22, 160, 133, 0.2);
+          box-shadow: 0.3rem 0.3rem 0 rgba(22, 160, 133, 0.2);
 }
 
 .appointment-area .appointment-box .appointment-form h3 {
@@ -707,6 +715,8 @@ img {
   overflow: hidden;
   position: relative;
   background-color: #ffff;
+  -webkit-box-shadow: 0.3rem 0.3rem 0 rgba(22, 160, 133, 0.2);
+          box-shadow: 0.3rem 0.3rem 0 rgba(22, 160, 133, 0.2);
   border-radius: 5px;
   z-index: 0;
 }
@@ -784,6 +794,8 @@ img {
   border: 0.2rem solid #16a085;
   padding: 25px 30px;
   border-radius: 5px;
+  -webkit-box-shadow: 0.3rem 0.3rem 0 rgba(22, 160, 133, 0.2);
+          box-shadow: 0.3rem 0.3rem 0 rgba(22, 160, 133, 0.2);
 }
 
 .blog-area .blogs-box .single-blog:hover .blog-image img {
@@ -1064,21 +1076,41 @@ img {
   .container {
     width: 750px;
   }
+  .header-area {
+    padding: 14px 5%;
+  }
   .header-area .menu ul li a {
-    font-size: 13px;
+    font-size: 15px;
   }
   .banner-area .banner-content .banner-text h2 {
-    font-size: 2rem;
+    font-size: 30px;
   }
-  .services-area .services-box .single-service h2 {
-    font-size: 24px;
+  .counter-area .counter-box {
+    -ms-grid-columns: (48%)[2];
+        grid-template-columns: repeat(2, 48%);
+    grid-gap: 30px;
+  }
+  .services-area .services-box {
+    -ms-grid-columns: (49%)[2];
+        grid-template-columns: repeat(2, 49%);
+  }
+  .about-area .about-box {
+    -ms-grid-columns: 260px auto;
+        grid-template-columns: 260px auto;
   }
   .about-area .about-box .single-about-text h2 {
-    font-size: 2rem;
+    font-size: 28px;
+    line-height: 30px;
   }
   .doctor-area .doctor-box {
     -ms-grid-columns: (auto)[2];
         grid-template-columns: repeat(2, auto);
+  }
+  .client-area .client-box .single-client {
+    padding: 2.5rem 1.5rem;
+  }
+  .blog-area .blogs-box .single-blog {
+    padding: 15px 10px;
   }
   .footer-area .footer-wrapper {
     -ms-grid-columns: (auto)[2];
@@ -1156,6 +1188,10 @@ img {
     -webkit-box-pack: inherit;
         -ms-flex-pack: inherit;
             justify-content: inherit;
+  }
+  .about-area .about-box .single-about-text h2 {
+    font-size: 28px;
+    line-height: 35px;
   }
   .doctor-area .doctor-box {
     -ms-grid-columns: auto;

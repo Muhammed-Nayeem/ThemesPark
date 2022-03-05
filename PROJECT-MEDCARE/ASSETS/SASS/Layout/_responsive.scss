@@ -25,31 +25,72 @@
     width: 750px;
   }
   .header-area {
+    padding: 14px 5%;
     .menu {
       ul {
         li {
           a {
-            font-size: 13px;
+            font-size: 15px;
           }
         }
       }
     }
   }
-  .banner-area .banner-content .banner-text h2 {
-    font-size: 2rem;
+  .banner-area {
+    .banner-content {
+      .banner-text {
+        h2 {
+          font-size: 30px;
+        }
+      }
+    }
   }
-  .services-area .services-box .single-service h2 {
-    font-size: 24px;
+  .counter-area {
+    .counter-box {
+      grid-template-columns: repeat(2, 48%);
+      grid-gap: 30px;
+    }
   }
-  .about-area .about-box .single-about-text h2 {
-    font-size: 2rem;
+  .services-area {
+    .services-box {
+      grid-template-columns: repeat(2, 49%);
+    }
   }
-  .doctor-area .doctor-box {
-    grid-template-columns: repeat(2, auto);
+  .about-area {
+    .about-box {
+      grid-template-columns: 260px auto;
+      .single-about-text {
+        h2 {
+          font-size: 28px;
+          line-height: 30px;
+        }
+      }
+    }
   }
-  .footer-area .footer-wrapper {
-    grid-template-columns: repeat(2, auto);
-    grid-gap: 20px;
+  .doctor-area {
+    .doctor-box {
+      grid-template-columns: repeat(2, auto);
+    }
+  }
+  .client-area {
+    .client-box {
+      .single-client {
+        padding: 2.5rem 1.5rem;
+      }
+    }
+  }
+  .blog-area {
+    .blogs-box {
+      .single-blog {
+        padding: 15px 10px;
+      }
+    }
+  }
+  .footer-area {
+    .footer-wrapper {
+      grid-template-columns: repeat(2, auto);
+      grid-gap: 20px;
+    }
   }
 }
 
@@ -58,81 +99,115 @@
   .container {
     width: 320px;
   }
-  .header-area #menu-btn {
-    display: initial;
-  }
-  .header-area .menu {
-    position: absolute;
-    top: 115%;
-    right: 2rem;
-    border-radius: 0.5rem;
-    width: 15rem;
-    border: $border;
-    background: $white;
-    padding: 20px 12px;
-    transform: scale(0);
-    opacity: 0;
-    transform-origin: top right;
-    transition: none;
-  }
-  .header-area .menu.active {
-    transform: scale(1);
-    opacity: 1;
-    transition: 0.2s ease-out;
-  }
-  .header-area .menu ul {
-    display: inherit;
-    li {
-      margin-bottom: 15px;
+  .header-area {
+    #menu-btn {
+      display: initial;
     }
   }
-  .banner-area .banner-content .banner-image {
-    flex-basis: 100%;
-  }
-  .banner-area .banner-content .banner-text {
-    flex-basis: 100%;
-    h2 {
-      line-height: 60px;
+  .header-area {
+    .menu {
+      position: absolute;
+      top: 115%;
+      right: 2rem;
+      border-radius: 0.5rem;
+      width: 15rem;
+      border: $border;
+      background: $white;
+      padding: 20px 12px;
+      transform: scale(0);
+      opacity: 0;
+      transform-origin: top right;
+      transition: none;
+      &.active {
+        transform: scale(1);
+        opacity: 1;
+        transition: 0.2s ease-out;
+      }
+      ul {
+        display: inherit;
+        li {
+          margin-bottom: 15px;
+        }
+      }
     }
   }
-  .counter-area .counter-box {
-    grid-template-columns: auto;
-    justify-content: inherit;
-    .single-counter {
-      margin-bottom: 20px;
+  .banner-area {
+    .banner-content {
+      .banner-image {
+        flex-basis: 100%;
+      }
+      .banner-text {
+        flex-basis: 100%;
+        h2 {
+          line-height: 60px;
+        }
+      }
     }
   }
-  .services-area .services-box {
-    grid-template-columns: auto;
+  .counter-area {
+    .counter-box {
+      grid-template-columns: auto;
+      justify-content: inherit;
+      .single-counter {
+        margin-bottom: 20px;
+      }
+    }
   }
-  .about-area .about-box {
-    grid-template-columns: auto;
-    justify-content: inherit;
+  .services-area {
+    .services-box {
+      grid-template-columns: auto;
+    }
   }
-  .doctor-area .doctor-box {
-    grid-template-columns: auto;
+  .about-area {
+    .about-box {
+      grid-template-columns: auto;
+      justify-content: inherit;
+      .single-about-text {
+        h2 {
+          font-size: 28px;
+          line-height: 35px;
+        }
+      }
+    }
   }
-  .section-title h1 {
-    font-size: 42px;
-    line-height: 46px;
+  .doctor-area {
+    .doctor-box {
+      grid-template-columns: auto;
+    }
   }
-  .appointment-area .appointment-box {
-    grid-template-columns: auto;
+  .section-title {
+    h1 {
+      font-size: 42px;
+      line-height: 46px;
+    }
   }
-  .client-area .client-box {
-    grid-template-columns: auto;
-    grid-gap: 30px;
+  .appointment-area {
+    .appointment-box {
+      grid-template-columns: auto;
+    }
   }
-  .blog-area .blogs-box {
-    grid-template-columns: auto;
-    grid-gap: 30px;
+  .client-area {
+    .client-box {
+      grid-template-columns: auto;
+      grid-gap: 30px;
+    }
   }
-  .contact-area .contact-box {
-    grid-template-columns: auto;
+  .blog-area {
+    .blogs-box {
+      grid-template-columns: auto;
+      grid-gap: 30px;
+    }
   }
-  .footer-area .footer-wrapper {
-    grid-template-columns: auto;
-    grid-gap: 30px;
+  .contact-area {
+    .contact-box {
+      grid-template-columns: auto;
+    }
+  }
+  .footer-area {
+    .footer-wrapper {
+      grid-template-columns: auto;
+      grid-gap: 30px;
+    }
   }
 }
 

@@ -10,6 +10,7 @@
       overflow: hidden;
       position: relative;
       background-color: $white;
+      box-shadow: $box_shadow;
       border-radius: 5px;
       z-index: 0;
       &::before {
