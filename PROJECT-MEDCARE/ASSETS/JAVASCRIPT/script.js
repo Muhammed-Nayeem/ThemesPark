@@ -39,3 +39,56 @@ let calcScrollValue = () => {
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
+
+/**
+ * slick-slider code:
+ */
+ $(document).ready(function(){
+   //client area slider activate code:
+  $('.client-box').slick({
+    arrows: false,
+    slidesToShow: 3,
+    autoplay: true,
+    infinite: true,
+    loop: true,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
+  //blog area slider activate code:
+  $('.blogs-box').slick({
+    slidesToShow: 3,
+    arrows: false,
+    autoplay: true,
+    infinite: true,
+    loop: true,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});

@@ -1,8 +1,8 @@
 .blog-area {
   .blogs-box {
-    display: grid;
-    grid-template-columns: repeat(3, 32%);
-    justify-content: space-between;
+    // display: grid;
+    // grid-template-columns: repeat(3, 32%);
+    // justify-content: space-between;
     .single-blog {
       border: $border;
       padding: 25px 30px;
@@ -58,6 +58,35 @@
           margin: 15px 0;
         }
       }
+    }
+     /*slick slider css code*/
+     .slick-dots {
+      left: 50%;
+      position: absolute;
+      margin-top: 30px;
+      transform: translateX(-50%);
+      li {
+        display: inline-block;
+        margin: 0 4px;
+        &.slick-active {
+          button {
+            background-color: $black_light;
+          }
+        }
+        button {
+          border: 0;
+          outline: none;
+          background-color: $green;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          line-height: 15px;
+          text-indent: -9999px;
+        }
+      }
+    }
+    .slick-slide {
+      margin: 0 15px;
     }
   }
 }
