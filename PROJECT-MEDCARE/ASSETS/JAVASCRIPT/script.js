@@ -44,6 +44,8 @@ window.onload = calcScrollValue;
  * slick-slider code:
  */
  $(document).ready(function(){
+   //counter area activated code:
+   $(".counter-increment").counterUp();
    //client area slider activate code:
   $('.client-box').slick({
     arrows: false,

@@ -21,20 +21,20 @@
     </div>
     <nav class="menu">
       <ul>
-        <li><a href="home">home</a></li>
-        <li><a href="services">services</a></li>
-        <li><a href="about">about</a></li>
-        <li><a href="doctors">doctors</a></li>
-        <li><a href="appointment">appointment</a></li>
-        <li><a href="blog">blog</a></li>
-        <li><a href="contact">contact</a></li>
+        <li><a href="#home">home</a></li>
+        <li><a href="#services">services</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#doctors">doctors</a></li>
+        <li><a href="#appointment">appointment</a></li>
+        <li><a href="#blog">blog</a></li>
+        <li><a href="#contact">contact</a></li>
       </ul>
     </nav>
     <div id="menu-btn" class="fas fa-bars"></div>
   </header><!-- header area end -->
 
   <!-- banner area start -->
-  <section class="banner-area pt-100 pb-70">
+  <section class="banner-area pt-100 pb-70" id="home">
     <div class="container">
       <main class="banner-content">
         <div class="banner-image">
@@ -55,22 +55,22 @@
       <main class="counter-box">
         <div class="single-counter">
           <i class="fas fa-user-md"></i>
-          <h3>140<span>+</span></h3>
+          <h3 class="counter-increment">140</h3>
           <p>Doctors At Work</p>
         </div>
         <div class="single-counter">
           <i class="fas fa-users"></i>
-          <h3>1040<span>+</span></h3>
+          <h3 class="counter-increment">1040</h3>
           <p>Satisfied Patients</p>
         </div>
         <div class="single-counter">
           <i class="fas fa-procedures"></i>
-          <h3>500<span>+</span></h3>
+          <h3 class="counter-increment">500</h3>
           <p>Bed Facility</p>
         </div>
         <div class="single-counter">
           <i class="fas fa-hospital"></i>
-          <h3>80<span>+</span></h3>
+          <h3 class="counter-increment">80</h3>
           <p>Available Hospital</p>
         </div>
       </main>
@@ -78,7 +78,7 @@
   </section><!-- counter area end -->
 
   <!-- services area start -->
-  <section class="services-area pt-100 pb-100">
+  <section class="services-area pt-100 pb-100" id="services">
     <div class="container">
       <article class="section-title mb-60">
         <h1>our <span>services</span></h1>
@@ -125,7 +125,7 @@
   </section><!-- services area end -->
 
   <!-- about area start -->
-  <section class="about-area pt-80 pb-80">
+  <section class="about-area pt-80 pb-80" id="about">
     <div class="container">
       <article class="section-title mb-30">
         <h1>about <span>us</span></h1>
@@ -145,7 +145,7 @@
   </section><!-- about area end -->
 
   <!-- our doctors area start -->
-  <section class="doctor-area pt-80 pb-80">
+  <section class="doctor-area pt-80 pb-80" id="doctors">
     <div class="container">
       <article class="section-title mb-60">
         <h1>our <span>doctors</span></h1>
@@ -258,7 +258,7 @@
   </section><!-- our doctors area end -->
 
   <!-- appointment area start -->
-  <section class="appointment-area pt-80 pb-80">
+  <section class="appointment-area pt-80 pb-80" id="appointment">
     <div class="container">
       <article class="section-title mb-30">
         <h1>take <span>appointment</span></h1>
@@ -389,7 +389,7 @@
   </section><!-- client area end -->
 
   <!-- blog area start -->
-  <section class="blog-area pt-80 pb-80">
+  <section class="blog-area pt-80 pb-80" id="blog">
     <div class="container">
       <article class="section-title mb-60">
         <h1>latest <span>blogs</span></h1>
@@ -484,7 +484,7 @@
   </section><!-- blog area end -->
 
   <!-- contact area start -->
-  <section class="contact-area pt-80 pb-80">
+  <section class="contact-area pt-80 pb-80" id="contact">
     <div class="container">
       <article class="section-title mb-60">
         <h1>contact <span>us</span></h1>
@@ -584,6 +584,9 @@
 
   <!-- jquery library -->
   <script src="./ASSETS/VENDORS/JqueryLib/jequery-1.12.min.js"></script>
+  <!-- counter up js file -->
+  <script src="./ASSETS/VENDORS/CounterUP/waypoints.min.js"></script>
+  <script src="./ASSETS/VENDORS/CounterUP/counterup.min.js"></script>
   <!-- slick slider js file -->
   <script src="./ASSETS/VENDORS/SlickSlider/slick.min.js"></script>
   <!-- main script file -->
