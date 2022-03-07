@@ -94,3 +94,10 @@ window.onload = calcScrollValue;
     ],
   });
 });
+
+/**
+ * footer section: copyright year dynamic code:
+ */
+let dynamicYear = document.querySelector("#year");
+let objectDate = new Date();
+dynamicYear.textContent = objectDate.getFullYear();
