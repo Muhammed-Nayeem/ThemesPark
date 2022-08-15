@@ -47,3 +47,19 @@ body {
   background-color: $green;
   border-radius: 5rem;
 }
+
+@mixin button {
+  .btn {
+    color: $white;
+    background-color: $light_bg;
+    text-transform: capitalize;
+    padding: 12px 40px;
+    display: inline-block;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+    &:hover {
+      background-color: $white;
+      color: $black;
+    }
+  }
+}
