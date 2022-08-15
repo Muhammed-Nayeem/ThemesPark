@@ -1,0 +1,38 @@
+.counter {
+  padding: 50px 0;
+  &__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__box {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-basis: 23%;
+    background-color: $light_bg;
+    padding: 20px 0;
+    border-radius: 5px;
+    i {
+      color: $green;
+      font-size: 3rem;
+    }
+  }
+  &__box-content {
+    color: $white;
+    h3 {
+      font-size: 30px;
+      span {
+        font-size: 25px;
+      }
+    }
+    p {
+      text-transform: capitalize;
+      color: $light_white;
+      font-size: 18px;
+      margin-top: 5px;
+    }
+  }
+}
