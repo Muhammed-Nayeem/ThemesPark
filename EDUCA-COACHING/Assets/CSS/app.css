@@ -30,4 +30,43 @@ body {
   max-width: 1170px;
   width: 100%;
   margin: auto;
+}
+
+.header {
+  background-color: #4b4b4b;
+  padding: 12px 0;
+  line-height: 1.5;
+}
+.header__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  padding: 0 8px;
+}
+.header__logo a {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+.header__navbar {
+  padding: 0 8px;
+}
+.header__navbar ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+.header__navbar ul li a {
+  text-transform: capitalize;
+  font-size: 18px;
+  color: #aaa;
+  display: block;
+  padding: 5px 8px;
+  transition: all 0.5s ease;
+}
+.header__navbar ul li a.active, .header__navbar ul li a:hover {
+  color: #00E77F;
 }/*# sourceMappingURL=app.css.map */
