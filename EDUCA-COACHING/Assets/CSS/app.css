@@ -227,4 +227,50 @@ body {
   color: #aaa;
   font-size: 18px;
   margin-top: 5px;
+}
+
+.about {
+  padding: 20px 0;
+}
+.about__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__image {
+  flex: 1 1 45%;
+}
+.about__image img {
+  width: 100%;
+}
+.about__content {
+  flex: 1 1 45%;
+  text-align: center;
+}
+.about__content h3 {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.about__content p {
+  line-height: 1.5;
+  color: #aaa;
+  font-size: 18px;
+  padding: 0 30px;
+  margin-bottom: 15px;
+}
+.about__content .btn {
+  color: #fff;
+  background-color: #4b4b4b;
+  text-transform: capitalize;
+  padding: 12px 40px;
+  display: inline-block;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+}
+.about__content .btn:hover {
+  background-color: #fff;
+  color: #3d3d3d;
 }/*# sourceMappingURL=app.css.map */
