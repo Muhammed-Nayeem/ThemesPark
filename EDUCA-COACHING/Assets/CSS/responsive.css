@@ -1,0 +1,49 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+/* variables declaration */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+  .header__navbar ul li {
+    margin-left: 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: 320px;
+  }
+  .header__navToggler {
+    display: block;
+  }
+  .header__navbar {
+    width: 100%;
+    padding: 0;
+    max-height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 0.5s ease;
+  }
+  .header__navbar.open {
+    visibility: visible;
+  }
+  .header__navbar ul {
+    padding: 10px 8px;
+    border-top: 1px solid #aaa;
+    margin-top: 10px;
+  }
+  .header__navbar ul li {
+    margin: 0;
+    display: block;
+  }
+}
+@media only screen and (min-width: 470px) and (max-width: 767px) {
+  .container {
+    max-width: 450px;
+  }
+}/*# sourceMappingURL=responsive.css.map */

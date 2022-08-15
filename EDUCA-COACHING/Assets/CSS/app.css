@@ -64,9 +64,60 @@ body {
   font-size: 18px;
   color: #aaa;
   display: block;
-  padding: 5px 8px;
+  padding: 5px 0px;
   transition: all 0.5s ease;
 }
 .header__navbar ul li a.active, .header__navbar ul li a:hover {
   color: #00E77F;
+}
+.header__navToggler {
+  width: 35px;
+  height: 30px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 3px;
+  display: none;
+  margin-right: 10px;
+  background-color: #4b4b4b;
+}
+.header__navToggler:focus {
+  outline: none;
+}
+.header__navToggler.active span {
+  background-color: transparent;
+}
+.header__navToggler span {
+  width: 25px;
+  height: 4px;
+  background-color: #4b4b4b;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  position: relative;
+  background-color: #fff;
+  transition: all 0.5s ease;
+}
+.header__navToggler span::before, .header__navToggler span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4b4b4b;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all 0.5s ease;
+}
+.header__navToggler span::before {
+  transform: translateY(-7px);
+}
+.header__navToggler span::after {
+  transform: translateY(7px);
+}
+.header__navToggler.active span::before {
+  transform: rotate(45deg);
+}
+.header__navToggler.active span::after {
+  transform: rotate(135deg);
 }/*# sourceMappingURL=app.css.map */
