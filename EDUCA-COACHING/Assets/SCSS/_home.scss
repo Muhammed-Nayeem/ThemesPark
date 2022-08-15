@@ -1,0 +1,42 @@
+.showcase {
+  &__wrapper {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__text {
+    flex: 1 1 50%;
+    text-align: center;
+    h3 {
+      text-transform: capitalize;
+      font-size: 6rem;
+      color: $white;
+      line-height: 1;
+      margin-bottom: 1rem;
+      span {
+        display: block;
+        color: $green;
+      }
+    }
+    .btn {
+      color: $white;
+      background-color: $light_bg;
+      text-transform: capitalize;
+      padding: 12px 40px;
+      display: inline-block;
+      border-radius: 50px;
+      transition: all 0.5s ease;
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
+    }
+  }
+  &__image {
+    flex: 1 1 50%;
+    img {
+      width: 100%;
+    }
+  }
+}
