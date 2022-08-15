@@ -1,0 +1,41 @@
+.header {
+  background-color: $light_bg;
+  padding: 12px 0;
+  line-height: 1.5;
+  &__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    padding: 0 8px;
+    a {
+      text-transform: uppercase;
+      color: $white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+  &__navbar {
+    padding: 0 8px;
+    ul {
+      li {
+        display: inline-block;
+        margin-left: 25px;
+        a {
+          text-transform: capitalize;
+          font-size: 18px;
+          color: $light_white;
+          display: block;
+          padding: 5px 8px;
+          transition: all 0.5s ease;
+          &.active,
+          &:hover {
+            color: $green;
+          }
+        }
+      }
+    }
+  }
+}
