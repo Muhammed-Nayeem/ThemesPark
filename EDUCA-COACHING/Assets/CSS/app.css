@@ -201,7 +201,6 @@ body {
 }
 .counter__box {
   display: flex;
-  flex-flow: row wrap;
   align-items: center;
   justify-content: space-evenly;
   flex-basis: 23%;
