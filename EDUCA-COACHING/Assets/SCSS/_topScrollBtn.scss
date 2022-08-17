@@ -1,24 +1,36 @@
-#progress {
+.progress {
   position: fixed;
   bottom: 30px;
   right: 15px;
   width: 45px;
   height: 45px;
-  color: $white;
-  display: none;
+  display: grid;
   place-items: center;
   border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  transition: all .5s ease;
-  #progress-value {
-    display: block;
-    width: calc(100% - 10px);
-    height: calc(100% - 10px);
-    background-color: $black;
-    color: $green;
-    border-radius: 50%;
-    display: grid;
+  z-index: 2;
+  #progress {
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    color: $white;
+    display: none;
     place-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+    z-index: 2;
+    #progress-value {
+      display: block;
+      width: calc(100% - 10px);
+      height: calc(100% - 10px);
+      background-color: $black;
+      color: $green;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+    }
   }
 }
