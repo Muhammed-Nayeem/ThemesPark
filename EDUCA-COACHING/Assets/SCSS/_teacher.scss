@@ -1,0 +1,62 @@
+.teachers {
+  padding: 50px 0;
+  @include title("teachers");
+  &__slider {
+    margin-top: 50px;
+  }
+  &__wrapper {
+    margin-bottom: 15px;
+  }
+  &__slide {
+    background-color: $light_bg;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+  }
+  &__image {
+    padding: 10px;
+    border: 1px solid $black;
+    height: 400px;
+    img {
+      border-radius: 5px;
+      height: 100%;
+    }
+  }
+  &__content {
+    text-align: center;
+    margin: 10px 0;
+    h3 {
+      text-transform: capitalize;
+      font-size: 20px;
+      color: $white;
+      margin-bottom: 5px;
+      span {
+        text-transform: lowercase;
+        display: block;
+        font-weight: normal;
+        font-style: italic;
+        font-size: 16px;
+        color: $light_white;
+      }
+    }
+  }
+  &__social {
+    margin-top: 12px;
+    i {
+      color: $light_white;
+      font-size: 20px;
+      cursor: pointer;
+      margin: 0 10px;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+  .swiper-pagination-bullet {
+    background-color: $light_white;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $green;
+  }
+}

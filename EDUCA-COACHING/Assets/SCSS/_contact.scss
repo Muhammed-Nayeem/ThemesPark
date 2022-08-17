@@ -1,0 +1,94 @@
+.contact {
+  padding: 50px 0;
+  @include title("contact");
+  &__wrapper {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+  &__image {
+    flex: 1 1 50%;
+    img {
+      width: 100%;
+    }
+  }
+  &__form {
+    flex: 1 1 45%;
+    form {
+      label,
+      p {
+        display: block;
+        text-transform: capitalize;
+        font-size: 1rem;
+        color: $light_white;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      .course-box {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 13px 15px;
+        border: 0;
+        outline: none;
+        border-radius: 5px;
+        background-color: $light_bg;
+        color: $white;
+        font-size: 17px;
+      }
+      .course-box {
+        color: $white;
+        text-transform: capitalize;
+      }
+      .radio {
+        display: flex;
+        .gender-status {
+          margin-right: 20px;
+          input {
+            appearance: none;
+            height: 1rem;
+            width: 1rem;
+            background-color: $light_bg;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            &:checked {
+              background-color: $green;
+              border-radius: 50%;
+            }
+          }
+          label {
+            margin-left: 5px;
+            display: inline-block;
+          }
+          #male:checked ~ label[for="male"] {
+            color: $green;
+          }
+          #female:checked ~ label[for="female"] {
+            color: $green;
+          }
+        }
+      }
+      .submit-btn {
+        width: auto;
+        margin: 20px auto;
+        color: $white;
+        background-color: $light_bg;
+        text-transform: capitalize;
+        padding: 12px 40px;
+        border-radius: 50px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        &:hover {
+          background-color: $white;
+          color: $black;
+        }
+      }
+    }
+  }
+}

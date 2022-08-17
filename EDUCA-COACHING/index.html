@@ -12,9 +12,11 @@
     <!-- font-awesome cdn link -->
     <link rel="stylesheet" href="./Assets/VENDORS/Fontawesome/css/all.min.css"
     />
-    <!-- custom css file -->
+    <!-- swiper css file link -->
+    <link rel="stylesheet" href="./Assets/VENDORS/SwiperSlider/swiper-bundle.min.css">
+    <!-- custom css file link -->
     <link rel="stylesheet" href="./Assets/CSS/app.css" />
-    <!-- responsive css file -->
+    <!-- responsive css file link -->
     <link rel="stylesheet" href="./Assets/CSS/responsive.css" />
   </head>
   <body>
@@ -30,12 +32,12 @@
           </button>
           <nav class="header__navbar">
             <ul>
-              <li><a href="#" class="active">home</a></li>
-              <li><a href="#">about</a></li>
-              <li><a href="#">courses</a></li>
-              <li><a href="#">teachers</a></li>
-              <li><a href="#">reviews</a></li>
-              <li><a href="#">contact</a></li>
+              <li><a href="#home" class="active">home</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#courses">courses</a></li>
+              <li><a href="#teachers">teachers</a></li>
+              <li><a href="#reviews">reviews</a></li>
+              <li><a href="#contact">contact</a></li>
             </ul>
           </nav>
         </div>
@@ -44,7 +46,7 @@
     <!-- header area end -->
 
     <!-- showcase area start -->
-    <section class="showcase">
+    <section class="showcase" id="home">
       <div class="container">
         <div class="showcase__wrapper">
           <div class="showcase__text">
@@ -66,28 +68,28 @@
           <div class="counter__box">
             <i class="fa-solid fa-graduation-cap"></i>
             <div class="counter__box-content">
-              <h3>150<span>+</span></h3>
+              <h3><span class="counter-up">150</span>+</h3>
               <p>courses</p>
             </div>
           </div>
           <div class="counter__box">
             <i class="fa-solid fa-user-graduate"></i>
             <div class="counter__box-content">
-              <h3>1300<span>+</span></h3>
+              <h3><span class="counter-up">1300</span>+</h3>
               <p>students</p>
             </div>
           </div>
           <div class="counter__box">
             <i class="fa-solid fa-chalkboard-user"></i>
             <div class="counter__box-content">
-              <h3>80<span>+</span></h3>
+              <h3><span class="counter-up">80</span>+</h3>
               <p>teachers</p>
             </div>
           </div>
           <div class="counter__box">
             <i class="fa-solid fa-face-smile"></i>
             <div class="counter__box-content">
-              <h3>100<span>%</span></h3>
+              <h3><span class="counter-up">100</span>%</h3>
               <p>subscription</p>
             </div>
           </div>
@@ -97,7 +99,7 @@
     <!-- counter area end -->
 
     <!-- about area start -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="about__wrapper">
           <div class="about__image">
@@ -113,6 +115,380 @@
     </section>
     <!-- about area end -->
 
+    <!-- course area start -->
+    <section class="course" id="courses">
+      <div class="container">
+        <div class="course__title">
+          <h3>our <span>courses</span></h3>
+        </div>
+        <div class="swiper course__slider">
+          <div class="swiper-wrapper course__wrapper">
+            <div class="swiper-slide course__slide">
+              <img src="./Assets/IMAGES/course-1.svg" alt="course-photo">
+              <h3>web development</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos expedita similique distinctio?</p>
+            </div>
+            <div class="swiper-slide course__slide">
+              <img src="./Assets/IMAGES/course-2.svg" alt="course-photo">
+              <h3>digital marketing</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos expedita similique distinctio?</p>
+            </div>
+            <div class="swiper-slide course__slide">
+              <img src="./Assets/IMAGES/course-3.svg" alt="course-photo">
+              <h3>science & biology</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos expedita similique distinctio?</p>
+            </div>
+            <div class="swiper-slide course__slide">
+              <img src="./Assets/IMAGES/course-4.svg" alt="course-photo">
+              <h3>graphics design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos expedita similique distinctio?</p>
+            </div>
+            <div class="swiper-slide course__slide">
+              <img src="./Assets/IMAGES/course-5.svg" alt="course-photo">
+              <h3>teaching</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos expedita similique distinctio?</p>
+            </div>
+            <div class="swiper-slide course__slide">
+              <img src="./Assets/IMAGES/course-6.svg" alt="course-photo">
+              <h3>engineering</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos expedita similique distinctio?</p>
+            </div>
+          </div>
+          <!-- swiper pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- course area end -->
+
+    <!-- teachers area start -->
+    <section class="teachers" id="teachers">
+      <div class="container">
+        <div class="teachers__title">
+          <h3>expert <span>tutors</span></h3>
+        </div>
+        <div class="swiper teachers__slider">
+          <div class="swiper-wrapper teachers__wrapper">
+            <div class="swiper-slide teachers__slide">
+              <div class="teachers__image">
+                <img src="./Assets/IMAGES/tutor-1.png" alt="tutor-photo">
+              </div>
+              <div class="teachers__content">
+                <h3>joydip paul <span>web development</span></h3>
+                <div class="teachers__social">
+                  <i class="fa-solid fa-envelope"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <i class="fa-brands fa-square-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide teachers__slide">
+              <div class="teachers__image">
+                <img src="./Assets/IMAGES/tutor-2.png" alt="tutor-photo">
+              </div>
+              <div class="teachers__content">
+                <h3>agnila iqbal <span>graphics design</span></h3>
+                <div class="teachers__social">
+                  <i class="fa-solid fa-envelope"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <i class="fa-brands fa-square-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide teachers__slide">
+              <div class="teachers__image">
+                <img src="./Assets/IMAGES/tutor-3.png" alt="tutor-photo">
+              </div>
+              <div class="teachers__content">
+                <h3>dipta kaur <span>digital marketing</span></h3>
+                <div class="teachers__social">
+                  <i class="fa-solid fa-envelope"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <i class="fa-brands fa-square-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide teachers__slide">
+              <div class="teachers__image">
+                <img src="./Assets/IMAGES/tutor-4.png" alt="tutor-photo">
+              </div>
+              <div class="teachers__content">
+                <h3>malvika sharma <span>science & biology</span></h3>
+                <div class="teachers__social">
+                  <i class="fa-solid fa-envelope"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <i class="fa-brands fa-square-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide teachers__slide">
+              <div class="teachers__image">
+                <img src="./Assets/IMAGES/tutor-5.png" alt="tutor-photo">
+              </div>
+              <div class="teachers__content">
+                <h3>crescent partha <span>mathematics</span></h3>
+                <div class="teachers__social">
+                  <i class="fa-solid fa-envelope"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <i class="fa-brands fa-square-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide teachers__slide">
+              <div class="teachers__image">
+                <img src="./Assets/IMAGES/tutor-6.png" alt="tutor-photo">
+              </div>
+              <div class="teachers__content">
+                <h3>natasha ramonaf <span>applied science</span></h3>
+                <div class="teachers__social">
+                  <i class="fa-solid fa-envelope"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <i class="fa-brands fa-square-instagram"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- swiper pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- teachers area end -->
+
+    <!-- review area start -->
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="reviews__title">
+          <h3>student's <span>review</span></h3>
+        </div>
+        <div class="swiper reviews__slider">
+          <div class="swiper-wrapper reviews__wrapper">
+            <div class="swiper-slide reviews__slide">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed harum asperiores enim non blanditiis impedit sint sequi eligendi dolorum quas.</p>
+              <div class="user-info">
+                <img src="./Assets/IMAGES/pic-1.png" alt="students-photo">
+                <div class="user-content">
+                  <h3>user name</h3>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide reviews__slide">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed harum asperiores enim non blanditiis impedit sint sequi eligendi dolorum quas.</p>
+              <div class="user-info">
+                <img src="./Assets/IMAGES/pic-2.png" alt="students-photo">
+                <div class="user-content">
+                  <h3>user name</h3>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide reviews__slide">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed harum asperiores enim non blanditiis impedit sint sequi eligendi dolorum quas.</p>
+              <div class="user-info">
+                <img src="./Assets/IMAGES/pic-3.png" alt="students-photo">
+                <div class="user-content">
+                  <h3>user name</h3>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide reviews__slide">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed harum asperiores enim non blanditiis impedit sint sequi eligendi dolorum quas.</p>
+              <div class="user-info">
+                <img src="./Assets/IMAGES/pic-4.png" alt="students-photo">
+                <div class="user-content">
+                  <h3>user name</h3>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide reviews__slide">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed harum asperiores enim non blanditiis impedit sint sequi eligendi dolorum quas.</p>
+              <div class="user-info">
+                <img src="./Assets/IMAGES/pic-5.png" alt="students-photo">
+                <div class="user-content">
+                  <h3>user name</h3>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide reviews__slide">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed harum asperiores enim non blanditiis impedit sint sequi eligendi dolorum quas.</p>
+              <div class="user-info">
+                <img src="./Assets/IMAGES/pic-6.png" alt="students-photo">
+                <div class="user-content">
+                  <h3>user name</h3>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- swiper pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- review area end -->
+
+    <!-- contact area start -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact__title">
+          <h3>contact <span>us</span></h3>
+        </div>
+        <div class="contact__wrapper">
+          <div class="contact__image">
+            <img src="./Assets/IMAGES/contact-img.svg" alt="contact-side-photo">
+          </div>
+          <aside class="contact__form">
+            <form action="" method="post">
+              <label for="name">your name</label>
+              <input type="text" name="name" placeholder="Enter your name" id="name" required>
+              <label for="email">your email</label>
+              <input type="email" name="email" id="email" placeholder="enter your email" required>
+              <label for="number">your number</label>
+              <input type="number" name="number" id="number" placeholder="enter your number" required>
+              <p>select course</p>
+              <select name="courses" class="course-box" required>
+                <option value="" disabled selected>select the course --</option>
+                <option value="web development">web development</option>
+                <option value="graphics design">graphics design</option>
+                <option value="digital marketing">digital marketing</option>
+                <option value="science & biology">science & biology</option>
+                <option value="engineering">engineering</option>
+                <option value="information technology">information technology</option>
+                <option value="applied science">applied science</option>
+              </select>
+              <p>select gender</p>
+              <div class="radio">
+                <div class="gender-status">
+                  <input type="radio" id="male" name="gender" value="male">
+                  <label for="male">male</label>
+                </div>
+                <div class="gender-status">
+                  <input type="radio" id="female" name="gender" value="female">
+                  <label for="female">female</label>
+                </div>
+                <div class="gender-status">
+                  <input type="radio" id="other" name="gender" value="other">
+                  <label for="ohter">other</label>
+                </div>
+              </div>
+              <input type="submit" value="send message" class="submit-btn">
+            </form>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <!-- contact area end -->
+
+    <!-- footer area start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__top">
+            <div class="footer__top-left">
+              <h3><i class="fa-solid fa-book-open-reader"></i> <span>edu care</span></h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, labore provident. Accusantium perspiciatis impedit nesciunt hic id sequi omnis eos? Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="footer__top-right">
+              <div class="footer__top-right-column">
+                <h3>navigation</h3>
+                <ul>
+                  <li><a href="#">contact us</a></li>
+                  <li><a href="#">courses</a></li>
+                  <li><a href="#">teachers</a></li>
+                  <li><a href="#">e-books</a></li>
+                  <li><a href="#">blogs</a></li>
+                </ul>
+              </div>
+              <div class="footer__top-right-column">
+                <h3>industries</h3>
+                <ul>
+                  <li><a href="#">e-platform</a></li>
+                  <li><a href="#">smart study</a></li>
+                  <li><a href="#">edu sectior</a></li>
+                  <li><a href="#">smart tutors</a></li>
+                  <li><a href="#">easy guideline</a></li>
+                </ul>
+              </div>
+              <div class="footer__top-right-column">
+                <h3>services</h3>
+                <ul>
+                  <li><a href="#">it skill development</a></li>
+                  <li><a href="#">academic education</a></li>
+                  <li><a href="#">engineering courses</a></li>
+                  <li><a href="#">software development</a></li>
+                  <li><a href="#">graphics design</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <p>&copy; <span class="year"></span> - design by m_Nayem</p>
+            <ul>
+              <li><a href="#">terms of use</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">cookie policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- to top scroll button start -->
+    <section id="progress">
+      <i id="progress-value" class="fa-solid fa-angle-up"></i>
+    </section>
+    <!-- to top scroll button end -->
+
+
+    <!-- jquery library js file link -->
+    <script src="./Assets/VENDORS/JqueryLib/jequery-1.12.min.js"></script>
+    <!-- waypoint jquery plugin -->
+    <script src="./Assets/VENDORS/CounterUP/waypoints.min.js"></script>
+    <!-- counter up jquery plugin -->
+    <script src="./Assets/VENDORS/CounterUP/counterup.min.js"></script>
+    <!-- swiper js file link -->
+    <script src="./Assets/VENDORS/SwiperSlider/swiper-bundle.min.js"></script>
     <!-- javascript file link -->
     <script src="./Assets/JAVASCRIPT/app.js"></script>
   </body>

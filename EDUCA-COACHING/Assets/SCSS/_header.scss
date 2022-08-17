@@ -1,7 +1,12 @@
 .header {
   background-color: $light_bg;
-  padding: 12px 0;
+  padding: 15px 0;
   line-height: 1.5;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
   &__wrapper {
     display: flex;
     flex-flow: row wrap;
