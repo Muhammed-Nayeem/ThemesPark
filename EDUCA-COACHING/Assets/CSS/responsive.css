@@ -1,22 +1,22 @@
 /* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
 /* variables declaration */
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .container {
     max-width: 970px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
   .container {
-    max-width: 750px;
+    max-width: 760px;
   }
   .header__navbar ul li {
     margin-left: 15px;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .container {
-    max-width: 320px;
+    max-width: 95%;
   }
   .header__navToggler {
     display: block;
@@ -42,8 +42,13 @@
     display: block;
   }
 }
-@media only screen and (min-width: 470px) and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   .container {
-    max-width: 450px;
+    max-width: 90%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .container {
+    max-width: 85%;
   }
 }/*# sourceMappingURL=responsive.css.map */

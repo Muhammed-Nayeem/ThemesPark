@@ -1,4 +1,6 @@
 .teachers {
+  position: relative;
+  top: 67px;
   padding: 50px 0;
   @include title("teachers");
   &__slider {

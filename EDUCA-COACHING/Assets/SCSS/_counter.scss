@@ -1,4 +1,6 @@
 .counter {
+  position: relative;
+  top: 67px;
   padding: 50px 0;
   &__wrapper {
     display: flex;
@@ -10,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-basis: 23%;
+    flex-basis: 24%;
     background-color: $light_bg;
     padding: 20px 0;
     border-radius: 5px;

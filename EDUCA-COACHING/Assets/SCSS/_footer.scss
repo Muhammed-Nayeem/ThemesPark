@@ -1,4 +1,6 @@
 .footer {
+  position: relative;
+  top: 67px;
   background-color: $light_bg;
   padding: 50px 0 20px;
   &__wrapper {
@@ -76,7 +78,7 @@
       color: $white;
       font-size: 20px;
       margin-bottom: 5px;
-      padding-bottom: 10px;
+      padding-bottom: 8px;
       position: relative;
       &::after {
         content: "";
@@ -84,7 +86,7 @@
         left: 0;
         bottom: 0;
         width: 50px;
-        height: 5px;
+        height: 3px;
         background-color: $green;
         border-radius: 3px;
       }

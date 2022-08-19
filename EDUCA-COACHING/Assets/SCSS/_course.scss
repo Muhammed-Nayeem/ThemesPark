@@ -1,5 +1,7 @@
 .course {
-  padding: 60px 0;
+  position: relative;
+  top: 67px;
+  padding: 50px 0;
   @include title("course");
   &__slider {
     margin-top: 50px;
