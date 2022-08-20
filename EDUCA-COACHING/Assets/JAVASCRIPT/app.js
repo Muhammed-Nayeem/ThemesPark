@@ -25,8 +25,11 @@ const swiperC = new Swiper(".course__slider", {
     clickable: true,
   },
   breakpoints: {
-    540: {
+    400: {
       slidesPerView: 1,
+    },
+    540: {
+      slidesPerView: 2,
     },
     768: {
       slidesPerView: 2,
@@ -47,8 +50,11 @@ const swiperT = new Swiper(".teachers__slider", {
     clickable: true,
   },
   breakpoints: {
-    540: {
+    400: {
       slidesPerView: 1,
+    },
+    540: {
+      slidesPerView: 2,
     },
     768: {
       slidesPerView: 2,
@@ -72,8 +78,11 @@ const swiperR = new Swiper(".reviews__slider", {
     clickable: true,
   },
   breakpoints: {
-    540: {
+    400: {
       slidesPerView: 1,
+    },
+    540: {
+      slidesPerView: 2,
     },
     768: {
       slidesPerView: 2,
@@ -98,7 +107,7 @@ let calcScrollValue = () => {
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
   let scrollValue = Math.round((pos * 100) / calcHeight);
-  if (pos > 100) {
+  if (pos > 80) {
     scrollProgress.style.display = "grid";
   } else {
     scrollProgress.style.display = "none";
