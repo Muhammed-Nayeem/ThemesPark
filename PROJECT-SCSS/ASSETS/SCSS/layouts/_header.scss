@@ -1,6 +1,26 @@
 .header-area {
-  background-color: $white;
-  padding: 18px 0;
+  padding: 20px 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  transition: all .3s ease;
+  &.active {
+    background-color: $white;
+    border-bottom: 1px solid #f5f4f4;
+    padding: 12px 0;
+    .logo a {
+      h3 {
+        color: $black !important;
+      }
+    }
+    .menu-items ul li a {
+      color: $black !important;
+      &:hover {
+        color: $primary_color !important;
+      }
+    }
+  }
   .header-wrapper {
     .logo {
       float: left;
@@ -9,7 +29,7 @@
         display: block;
         h3 {
           text-transform: uppercase;
-          color: $black;
+          color: $white;
           font-size: 22px;
         }
       }
@@ -22,10 +42,14 @@
         text-align: right;
         li {
           display: inline-block;
+          &.current a {
+            color: $primary_color !important;
+          }
           a {
             display: block;
             margin-left: 20px;
             font-weight: 500;
+            color: $white;
             &:hover {
               color: $primary_color;
             }

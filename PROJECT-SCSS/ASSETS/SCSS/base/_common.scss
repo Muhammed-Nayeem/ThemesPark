@@ -4,6 +4,23 @@
   box-sizing: border-box;
 }
 
+// html {
+//   scroll-behavior: smooth;
+// }
+
+html::-webkit-scrollbar {
+  width: .5rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: $primary_color;
+  border-radius: 10px;
+}
+
 ul {
   list-style: none;
 }
@@ -100,7 +117,7 @@ img {
 }
 
 /* margin and padding css */
-@for $i from 1 through 10 {
+@for $i from 1 through 20 {
   .pt-#{$i * 10} {
     padding-top: ($i * 10) + px;
   }

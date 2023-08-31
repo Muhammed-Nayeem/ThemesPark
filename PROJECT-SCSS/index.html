@@ -22,13 +22,13 @@
             </a>
           </div>
           <nav class="menu-items">
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Services</a></li>
-              <li><a href="">Portfolio</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">Contact Us</a></li>
+            <ul id="nav">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact Us</a></li>
             </ul>
           </nav>
         </main>
@@ -36,7 +36,7 @@
     </header><!-- header area end -->
 
     <!-- banner area start -->
-    <section class="banner-area bg pt-100 pb-100" style="background-image: url('./ASSETS/IMAGES/banner.jpg')">
+    <section class="banner-area bg pt-200 pb-200" style="background-image: url('./ASSETS/IMAGES/banner.jpg')" id="home">
       <div class="container">
         <div class="banner-content text-center">
           <h1>welcome to our world!</h1>
@@ -52,7 +52,7 @@
     </section><!-- banner area end -->
 
     <!-- about area start-->
-    <section class="about-area pt-100 pb-100">
+    <section class="about-area pt-100 pb-100" id="about">
       <div class="container">
         <article class="section-title text-center mb-60">
           <h2>About Us</h2>
@@ -92,7 +92,7 @@
     </section><!-- about area end -->
 
     <!-- services area start -->
-    <section class="services-area pt-100 pb-70">
+    <section class="services-area pt-100 pb-70" id="services">
       <div class="container">
         <article class="section-title text-center mb-60">
           <h2>Our Services</h2>
@@ -138,7 +138,7 @@
     </section><!-- services area end -->
 
     <!-- portfolio area start -->
-    <section class="portfolio-area pt-100 pb-60">
+    <section class="portfolio-area pt-100 pb-60" id="portfolio">
       <div class="container">
         <article class="section-title text-center mb-60">
           <h2>Latest Portfolio</h2>
@@ -183,7 +183,7 @@
     </section><!-- CTA area end -->
 
     <!-- blog area start -->
-    <section class="blog-area pt-100 pb-100">
+    <section class="blog-area pt-100 pb-100" id="blog">
       <div class="container">
         <article class="section-title text-center mb-60">
           <h2>Exclusive Blogs</h2>
@@ -229,7 +229,7 @@
     </section><!-- blog area end -->
 
     <!-- contact area start -->
-    <section class="contact-area pt-100 pb-100">
+    <section class="contact-area pt-100 pb-100" id="contact">
       <div class="container">
         <article class="section-title text-center mb-60">
           <h2>Contact Us</h2>
@@ -287,6 +287,10 @@
       </div>
     </footer><!-- footer area end -->
 
+    <!-- jquery library -->
+    <script src="./ASSETS/VENDORS/Jquery/jquery.min.js"></script>
+    <!-- scroll effect one page nav -->
+    <script src="./ASSETS/VENDORS/ScrollEffect/onepagenav.js"></script>
     <!-- custom javascript file -->
     <script src="./ASSETS/JavaScript/app.js"></script>
   </body>
