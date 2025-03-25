@@ -1,0 +1,88 @@
+/*=================================================
+Theme Name: Sakola.Co - A Educational Landing Page.
+Author: Muhammed Nayeem.
+Date: 25th March, 2025.
+
+* Table Of Contents:
+--------------------
+0. Base CSS
+1. Common CSS
+2. Header CSS
+3. Banner CSS
+4. About Us CSS
+5. Schools CSS
+6. Studying CSS
+7. Newsletter CSS
+8. Contact CSS
+9. Footer CSS
+===================================================*/
+
+/*-------- 0.Base CSS ---------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --primary-font: "Open Sans", sans-serif;
+  --default-font-size: 1rem;
+  --default-font-weight: 400;
+  --primary-bg-color: #e7efff;
+  --primary-text-color: #000d83;
+  --secondary-text-color: #040931;
+  --subheading-color: #0bb4ff;
+  --text-color: #040931b5;
+  --button-bg-color: #000d83;
+  --icon-bg-color: #4ac7ff1a;
+  --icon-border-color: #4ac7ff;
+  --white-color: #fff;
+  --box-shadow-color: rgba(0, 0, 0, 0.04);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: var(--default-font-size);
+  font-weight: var(--default-font-weight);
+  overflow-x: hidden;
+}
+
+/*-------- 1.Common CSS ---------*/
+
+/*-------- 2.Header CSS ---------*/
+
+/*-------- 3.Banner CSS ---------*/
+
+/*-------- 4.About Us CSS ---------*/
+
+/*-------- 5.Schools CSS ---------*/
+
+/*-------- 6.Studying CSS ---------*/
+
+/*-------- 7.Newsletter CSS ---------*/
+
+/*-------- 8.Contact CSS ---------*/
+
+/*-------- 9.Footer CSS ---------*/
