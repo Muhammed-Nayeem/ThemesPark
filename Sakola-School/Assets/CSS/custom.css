@@ -70,12 +70,20 @@ body {
 }
 
 /*-------- 1.Common CSS ---------*/
+.subheading {}
+.heading {}
+.paragraph {}
+.primary-btn {}
+.outline-btn {}
+.primary-btn a, .outline-btn a {}
 
 /*-------- 2.Header CSS ---------*/
 header.header {
   background-color: var(--primary-bg-color);
   padding: 20px 0;
   position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 .header-wrapper {
   display: flex;
@@ -140,6 +148,20 @@ header.header {
 }
 
 /*-------- 3.Banner CSS ---------*/
+.banner {}
+.banner-wrapper {}
+.banner__contents {}
+.btn-group {}
+.avatar-group {}
+.avatar-group .avatar {}
+.avatar-group .avatar  .avatar-img {}
+.avatar-group .avatar  .avatar-img  img {}
+.avatar-group .avatar  .avatar-count {}
+.avatar-group .avatar  .avatar-count a {}
+.avatar-group .text {}
+.avatar-group .text p {}
+.banner__img {}
+.banner__img img {}
 
 /*-------- 4.About Us CSS ---------*/
 
