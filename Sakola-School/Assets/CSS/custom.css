@@ -18,20 +18,21 @@ Date: 25th March, 2025.
 ===================================================*/
 
 /*-------- 0.Base CSS ---------*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 :root {
   --primary-font: "Open Sans", sans-serif;
   --default-font-size: 1rem;
   --default-font-weight: 400;
-  --primary-bg-color: #e7efff;
-  --primary-text-color: #000d83;
-  --secondary-text-color: #040931;
-  --subheading-color: #0bb4ff;
-  --text-color: #040931b5;
+  --primary-bg-color: rgb(231, 239, 255);
+  --primary-text-color: rgb(0, 13, 131);
+  --secondary-text-color: rgb(4, 9, 49);
+  --subheading-color: rgb(11, 180, 255);
+  --text-color: rgba(4, 9, 49, 0.71);
   --button-bg-color: #000d83;
-  --icon-bg-color: #4ac7ff1a;
-  --icon-border-color: #4ac7ff;
+  --icon-bg-color: rgb(237, 250, 255);
+  --footer-icon-bg-color: rgb(211, 212, 214);
+  --icon-border-color: rgb(74, 199, 255);
   --white-color: #fff;
   --box-shadow-color: rgba(0, 0, 0, 0.04);
 }
@@ -70,12 +71,47 @@ body {
 }
 
 /*-------- 1.Common CSS ---------*/
-.subheading {}
-.heading {}
-.paragraph {}
-.primary-btn {}
-.outline-btn {}
-.primary-btn a, .outline-btn a {}
+.subheading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--subheading-color);
+}
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-text-color);
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+.banner__contents h2.heading {
+  width: 90%;
+}
+.paragraph {
+  font-size: 1rem;
+  line-height: 25px;
+  color: var(--text-color);
+  font-size: 1rem;
+}
+.banner__contents p.paragraph {
+  width: 85%;
+}
+.btn {
+  border: 1px solid var(--button-bg-color);
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-transform: capitalize;
+  font-weight: 600;
+  cursor: pointer;
+}
+.primary-btn {
+  background-color: var(--button-bg-color);
+  color: var(--white-color);
+}
+.outline-btn {
+  background-color: transparent;
+  color: var(--text-color);
+}
 
 /*-------- 2.Header CSS ---------*/
 header.header {
@@ -116,7 +152,7 @@ header.header {
   text-transform: capitalize;
   color: var(--primary-text-color);
   line-height: 22px;
-  transition: color .5s ease;
+  transition: color 0.5s ease;
 }
 .header__menu ul li a:hover {
   color: var(--secondary-text-color);
@@ -131,7 +167,7 @@ header.header {
   display: inline-block;
   text-transform: capitalize;
   color: var(--primary-text-color);
-  transition: border .5s ease;
+  transition: border 0.5s ease;
 }
 .header__menu-btns .sign-up-btn {
   display: inline-block;
@@ -140,7 +176,7 @@ header.header {
   border: 1px solid var(--primary-text-color);
   padding: 5px 20px;
   border-radius: 8px;
-  transition: background .5s ease, color .5s ease;
+  transition: background 0.5s ease, color 0.5s ease;
 }
 .header__menu-btns .sign-up-btn:hover {
   background-color: var(--primary-text-color);
@@ -148,20 +184,86 @@ header.header {
 }
 
 /*-------- 3.Banner CSS ---------*/
-.banner {}
-.banner-wrapper {}
-.banner__contents {}
-.btn-group {}
-.avatar-group {}
-.avatar-group .avatar {}
-.avatar-group .avatar  .avatar-img {}
-.avatar-group .avatar  .avatar-img  img {}
-.avatar-group .avatar  .avatar-count {}
-.avatar-group .avatar  .avatar-count a {}
-.avatar-group .text {}
-.avatar-group .text p {}
-.banner__img {}
-.banner__img img {}
+.banner {
+  background-color: var(--primary-bg-color);
+  padding: 90px 0;
+}
+.banner-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+}
+.banner__contents {
+  flex-basis: 50%;
+}
+.btn-group {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 1.8rem 0;
+}
+.avatar-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.avatar-group .avatar {
+  display: flex;
+}
+.avatar-group .avatar .avatar-img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  position: relative;
+  margin-left: -20px;
+}
+.avatar-group .avatar .avatar-img:first-child {
+  margin-left: 0;
+}
+.avatar-group .avatar .avatar-img img {
+  width: 100%;
+  height: 100%;
+}
+.avatar-group .avatar .avatar-count {
+  background-image: url("../Images/avatar.png");
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: -20px;
+}
+.avatar-group .avatar .avatar-count::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #333;
+  opacity: 0.9;
+  z-index: 1;
+}
+.avatar-group .avatar .avatar-count a {
+  color: var(--white-color);
+  z-index: 2;
+  font-size: 14px;
+}
+.avatar-group .text p {
+  color: var(--primary-text-color);
+}
+.banner__img {
+  flex-basis: 40%;
+}
+.banner__img img {
+  width: 100%;
+}
 
 /*-------- 4.About Us CSS ---------*/
 
