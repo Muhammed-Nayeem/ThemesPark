@@ -266,6 +266,17 @@ header.header {
 }
 
 /*-------- 4.About Us CSS ---------*/
+.about {}
+.about__wrapper {}
+.about__image {}
+.about__image img {}
+.about__content {}
+.about__content h2.heading {}
+.about__features {}
+.about__features .feature {}
+.about__features .feature .icon {}
+.about__features .feature p {}
+.about__features .feature .arrow {}
 
 /*-------- 5.Schools CSS ---------*/
 
